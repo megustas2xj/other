@@ -1,0 +1,370 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ConnectEapAccountRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "connectEapAccount_args",
+        "timport": [
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ConnectEapAccountResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AccountEapConnectException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "connectEapAccount_result",
+        "timport": [
+            "g.a.b.e0.a.a.a.a",
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "DisconnectEapAccountRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "disconnectEapAccount_args",
+        "timport": [
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "DisconnectEapAccountResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AccountEapConnectException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "disconnectEapAccount_result",
+        "timport": [
+            "g.a.b.e0.a.a.a.a",
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "OpenSessionRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "openSession_args",
+        "timport": [
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "OpenSessionResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AccountEapConnectException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "openSession_result",
+        "timport": [
+            "g.a.b.e0.a.a.a.a",
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "VerifyEapLoginRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyEapLogin_args",
+        "timport": [
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "VerifyEapLoginResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AccountEapConnectException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyEapLogin_result",
+        "timport": [
+            "g.a.b.e0.a.a.a.a",
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.a.a.a.s.class {\n    INTERNAL_ERROR = 0,\n    ILLEGAL_ARGUMENT = 1,\n    VERIFICATION_FAILED = 2,\n    RETRY_LATER = 4,\n    HUMAN_VERIFICATION_REQUIRED = 5,\n    APP_UPGRADE_REQUIRED = 101,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "alertMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "WebAuthDetails",
+                "name": "webAuthDetails",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "AccountEapConnectException",
+        "timport": [
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ConnectEapAccountRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "ConnectEapAccountResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "udid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "deviceModel",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "Device",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "eapType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.a.a.a.r.class {\n    UNKNOWN = 0,\n    FACEBOOK = 1,\n    APPLE = 2,\n}"
+            }
+        ],
+        "tstruct": "DisconnectEapAccountRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "DisconnectEapAccountResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.a.a.a.r.class {\n    UNKNOWN = 0,\n    FACEBOOK = 1,\n    APPLE = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accessToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "EapLogin",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "Device",
+                "name": "device",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "OpenSessionRequest",
+        "timport": [
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "OpenSessionResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "EapLogin",
+                "name": "eapLogin",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "VerifyEapLoginRequest",
+        "timport": [
+            "g.a.b.e0.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "accountExists",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "VerifyEapLoginResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "baseUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "token",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "WebAuthDetails",
+        "timport": null
+    }
+]

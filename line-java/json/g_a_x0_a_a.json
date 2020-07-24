@@ -1,0 +1,326 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "admissionTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "Admission",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "reservationNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetReservationRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "Reservation",
+                "name": "reservation",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetReservationResponse",
+        "timport": [
+            "com.linecorp.lt.etkt.api"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "lastFetchTimeStamp",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetReservationsRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cReservation\u003e",
+                "name": "reservations",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetReservationsResponse",
+        "timport": [
+            "com.linecorp.lt.etkt.api"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "ticketIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "NotifyEnteringRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "admissionTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "NotifyEnteringResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "reservationNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ReturnTicketRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "returnTicketTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "ReturnTicketResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "enum",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "parameterMap",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "TicketException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetReservationRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getReservation_args",
+        "timport": [
+            "g.a.x0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetReservationResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "TicketException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getReservation_result",
+        "timport": [
+            "g.a.x0.a.a",
+            "g.a.x0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetReservationsRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getReservations_args",
+        "timport": [
+            "g.a.x0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetReservationsResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "TicketException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getReservations_result",
+        "timport": [
+            "g.a.x0.a.a",
+            "g.a.x0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "NotifyEnteringRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyEntering_args",
+        "timport": [
+            "g.a.x0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "NotifyEnteringResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "TicketException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyEntering_result",
+        "timport": [
+            "g.a.x0.a.a",
+            "g.a.x0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ReturnTicketRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "returnTicket_args",
+        "timport": [
+            "g.a.x0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ReturnTicketResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "TicketException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "returnTicket_result",
+        "timport": [
+            "g.a.x0.a.a",
+            "g.a.x0.a.a"
+        ]
+    }
+]

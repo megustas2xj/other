@@ -1,0 +1,189 @@
+[
+    {
+        "tfields": [],
+        "tstruct": "GetHomeServiceListRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cHomeService\u003e",
+                "name": "services",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003ci32\u003e",
+                "name": "fixedServiceIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "list\u003ci32\u003e",
+                "name": "pinnedServiceCandidateIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cHomeCategory\u003e",
+                "name": "categories",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetHomeServiceListResponse",
+        "timport": [
+            "g.a.n0.a.a.a.a.a",
+            "g.a.n0.a.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "id",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "list\u003ci32\u003e",
+                "name": "ids",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "HomeCategory",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "id",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "serviceEntryUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "storeUrl",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "iconUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "pictogramIconUrl",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i64",
+                "name": "badgeUpdatedTimeMillis",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "badgeType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum g.a.n0.a.a.a.a.a.a.class {\n    NEW = 1,\n    UPDATE = 2,\n    EVENT = 3,\n}"
+            }
+        ],
+        "tstruct": "HomeService",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetHomeServiceListRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getHomeServiceList_args",
+        "timport": [
+            "g.a.n0.a.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetHomeServiceListResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "HomeException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getHomeServiceList_result",
+        "timport": [
+            "g.a.n0.a.a.a.a.a",
+            "g.a.n0.a.a.a.b"
+        ]
+    }
+]

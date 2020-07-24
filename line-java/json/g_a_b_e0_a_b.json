@@ -1,0 +1,1489 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.b.class {\n    UNKNOWN = 0,\n    PHONE_NUMBER = 1,\n    EMAIL = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "identifier",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "countryCode",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "AccountIdentifier",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "SimCard",
+                "name": "simCard",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getCountryInfo_args",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "EncryptedPassword",
+                "name": "encryptedPassword",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "setPassword_args",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetCountryInfoResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getCountryInfo_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "SetPasswordResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "setPassword_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "Device",
+                "name": "device",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "UserPhoneNumber",
+                "name": "userPhoneNumber",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPhoneVerifMethod_args",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "displayName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "validateProfile_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.h.class {\n    INTERNAL_ERROR = 0,\n    ILLEGAL_ARGUMENT = 1,\n    VERIFICATION_FAILED = 2,\n    NOT_FOUND = 3,\n    RETRY_LATER = 4,\n    HUMAN_VERIFICATION_REQUIRED = 5,\n    INVALID_CONTEXT = 100,\n    APP_UPGRADE_REQUIRED = 101,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "alertMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "WebAuthDetails",
+                "name": "webAuthDetails",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "AuthException",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetPhoneVerifMethodResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPhoneVerifMethod_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ValidateProfileResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "validateProfile_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "udid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "deviceModel",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "Device",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSecondAuthMethod_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "AccountIdentifier",
+                "name": "accountIdentifier",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "EncryptedPassword",
+                "name": "encryptedPassword",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyAccountUsingPwd_args",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "encryptionKeyVersion",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.g.class {\n    UNKNOWN = 0,\n    V1 = 1,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "cipherText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "EncryptedPassword",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetSecondAuthMethodResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSecondAuthMethod_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "VerifyAccountUsingPwdResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyAccountUsingPwd_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "Device",
+                "name": "device",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "UserPhoneNumber",
+                "name": "userPhoneNumber",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "pinCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyPhone_args",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "VerifyPhoneResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyPhone_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "authKeyVersion",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.g.class {\n    UNKNOWN = 0,\n    V1 = 1,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "publicKey",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "nonce",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ExchangeEncryptionKeyRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "AccountIdentifier",
+                "name": "accountIdentifier",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getUserProfile_args",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "Device",
+                "name": "device",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "SocialLogin",
+                "name": "socialLogin",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifySocialLogin_args",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "publicKey",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "nonce",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ExchangeEncryptionKeyResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetUserProfileResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getUserProfile_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "VerifySocialLoginResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifySocialLogin_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "availableMethod",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.c.class {\n    UNKNOWN = 0,\n    SKIP = 1,\n    PASSWORD = 2,\n    WEB_BASED = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "sameAccountFromAuthFactor",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetAcctVerifMethodResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "AccountIdentifier",
+                "name": "accountIdentifier",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueWebAuthDetailsForAcctVerif_args",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "RegisterPrimaryResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "countryCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "countryInEEA",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "set\u003cstring\u003e",
+                "name": "countrySetOfEEA",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetCountryInfoResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "IssueWebAuthDetailsForAcctVerifResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueWebAuthDetailsForAcctVerif_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003ci32\u003e",
+                "name": "availableMethods",
+                "requirement": "3",
+                "type": "15",
+                "note": "enum g.a.b.e0.a.b.t.class {\n    UNKNOWN = 0,\n    UNAVAILABLE = 1,\n    SMS = 2,\n    TTS = 3,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "prettifiedPhoneNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetPhoneVerifMethodResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueWebAuthDetailsForSecondAuth_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003ci32\u003e",
+                "name": "availableMethods",
+                "requirement": "3",
+                "type": "15",
+                "note": "enum g.a.b.e0.a.b.t.class {\n    UNKNOWN = 0,\n    UNAVAILABLE = 1,\n    SMS = 2,\n    TTS = 3,\n}"
+            }
+        ],
+        "tstruct": "SendPinCodeForPhoneResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "secondAuthMethod",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.l1.class {\n    UNKNOWN = 0,\n    SKIP = 1,\n    WEB_BASED = 2,\n}"
+            }
+        ],
+        "tstruct": "GetSecondAuthMethodResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "IssueWebAuthDetailsForSecondAuthResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueWebAuthDetailsForSecondAuth_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "SetPasswordResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "UserProfile",
+                "name": "userProfile",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetUserProfileResponse",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "migratePrimaryUsingPhone_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "countryCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "hni",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "carrierName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SimCard",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "WebAuthDetails",
+                "name": "webAuthDetails",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "IssueWebAuthDetailsForAcctVerifResponse",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "MigratePrimaryResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "migratePrimaryUsingPhone_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.q1.class {\n    UNKNOWN = 0,\n    FACEBOOK = 1,\n    APPLE = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accessToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "countryCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SocialLogin",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "WebAuthDetails",
+                "name": "webAuthDetails",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "IssueWebAuthDetailsForSecondAuthResponse",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "migratePrimaryUsingSocialLogin_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "MigratePrimaryResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "MigratePrimaryResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "migratePrimaryUsingSocialLogin_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "phoneNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "countryCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "UserPhoneNumber",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "metaData",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "OpenSessionRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "OpenSessionRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "openSession_args",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "displayName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "profileImageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "UserProfile",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "openSession_result",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "ValidateProfileResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "registerPrimaryUsingPhone_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "UserProfile",
+                "name": "userProfile",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "VerifyAccountUsingPwdResponse",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "RegisterPrimaryResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "registerPrimaryUsingPhone_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "accountExist",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "sameUdidFromAccount",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "UserProfile",
+                "name": "userProfile",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "VerifyPhoneResponse",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "ExchangeEncryptionKeyRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "exchangeEncryptionKey_args",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "registerPrimaryUsingSocialLogin_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "accountExist",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "UserProfile",
+                "name": "userProfile",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "bool",
+                "name": "sameUdidFromAccount",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "VerifySocialLoginResponse",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ExchangeEncryptionKeyResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "exchangeEncryptionKey_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "RegisterPrimaryResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "registerPrimaryUsingSocialLogin_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "baseUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "token",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "WebAuthDetails",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "AccountIdentifier",
+                "name": "accountIdentifier",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAcctVerifMethod_args",
+        "timport": [
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "Device",
+                "name": "device",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "UserPhoneNumber",
+                "name": "userPhoneNumber",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "verifMethod",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.b.t.class {\n    UNKNOWN = 0,\n    UNAVAILABLE = 1,\n    SMS = 2,\n    TTS = 3,\n}"
+            }
+        ],
+        "tstruct": "sendPinCodeForPhone_args",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetAcctVerifMethodResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAcctVerifMethod_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "SendPinCodeForPhoneResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "AuthException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "sendPinCodeForPhone_result",
+        "timport": [
+            "g.a.b.e0.a.b",
+            "g.a.b.e0.a.b"
+        ]
+    }
+]

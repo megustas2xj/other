@@ -1,0 +1,1973 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetProductSummariesInSubscriptionSlotsRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductSummariesInSubscriptionSlots_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getRecommendationForUser_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetSuggestResourcesV2Request",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSuggestResourcesV2_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "SaveStudentInformationRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "saveStudentInformation_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetProductSummariesInSubscriptionSlotsResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductSummariesInSubscriptionSlots_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ProductList",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getRecommendationForUser_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetSuggestResourcesV2Response",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSuggestResourcesV2_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "SaveStudentInformationResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "saveStudentInformation_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "EstablishE2EESessionRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "establishE2EESession_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "LatestProductsByAuthorRequest",
+                "name": "latestProductsByAuthorRequest",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAuthorsLatestProducts_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetProductRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductV2_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetRecommendationRequest",
+                "name": "getRecommendationRequest",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getRecommendationList_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "EstablishE2EESessionResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "establishE2EESession_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "LatestProductsByAuthorResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAuthorsLatestProducts_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetProductResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductV2_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetRecommendationResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getRecommendationList_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "AutoSuggestionShowcaseRequest",
+                "name": "autoSuggestionShowcaseRequest",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAutoSuggestionShowcase_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "productVersion",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductValidationScheme_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetResourceFileRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getResourceFile_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "AutoSuggestionShowcaseResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAutoSuggestionShowcase_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ProductValidationScheme",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductValidationScheme_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetResourceFileReponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getResourceFile_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "AddProductToSubscriptionSlotRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "addProductToSubscriptionSlot_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetBrowsingHistoryRequest",
+                "name": "getBrowsingHistoryRequest",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBrowsingHistory_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProduct_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSentPresents_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getUpdates_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "CustomizeImageTextRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "setCustomizedImageText_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "AddProductToSubscriptionSlotResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "addProductToSubscriptionSlot_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetBrowsingHistoryResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBrowsingHistory_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ProductDetail",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProduct_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PurchaseRecordList",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSentPresents_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ShopUpdates",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getUpdates_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "CustomizeImageTextResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "setCustomizedImageText_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "BuyMustbuyRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "buyMustbuyProduct_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "ProductListByAuthorRequest",
+                "name": "productListByAuthorRequest",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductsByAuthor_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ShowcaseRequest",
+                "name": "showcaseRequest",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getShowcaseV3_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "productVersion",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i64",
+                "name": "productEvent",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyProductEvent_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "productVersion",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "ProductValidationRequest",
+                "name": "validationReq",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "validateProduct_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "buyMustbuyProduct_result",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ProductList",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductsByAuthor_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ShowcaseV3",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getShowcaseV3_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyProductEvent_result",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ProductValidationResult",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "validateProduct_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "recipientMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "canReceivePresent_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "DynamicHomeNativeRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getDynamicHomeNative_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "PurchaseOrder",
+                "name": "purchaseOrder",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "placePurchaseOrderForFreeProduct_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "canReceivePresent_result",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "DynamicHomeNativeResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getDynamicHomeNative_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PurchaseOrderResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "placePurchaseOrderForFreeProduct_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "ChangeSubscriptionRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "changeSubscription_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetStudentInformationRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getStudentInformation_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ChangeSubscriptionResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "changeSubscription_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetStudentInformationResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getStudentInformation_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "PurchaseOrder",
+                "name": "purchaseOrder",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "placePurchaseOrderWithLineCoin_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PurchaseOrderResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "placePurchaseOrderWithLineCoin_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "FindRestorablePlanRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "findRestorablePlan_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetSubscriptionPlansRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSubscriptionPlans_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "CustomizeImageTextRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "previewCustomizedImageText_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "FindRestorablePlanResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "findRestorablePlan_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetSubscriptionPlansResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSubscriptionPlans_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "CustomizeImageTextResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "previewCustomizedImageText_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetOldSticonMappingRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getOldSticonMapping_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPurchasedProducts_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetOldSticonMappingResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getOldSticonMapping_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PurchaseRecordList",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPurchasedProducts_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getOwnedProductSummaries_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "PurchaseSubscriptionRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "purchaseSubscription_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ProductSummaryList",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getOwnedProductSummaries_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PurchaseSubscriptionResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "purchaseSubscription_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getOwnedProducts_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getReceivedPresents_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetSubscriptionStatusRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSubscriptionStatus_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "RemoveProductFromSubscriptionSlotRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "removeProductFromSubscriptionSlot_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "DetailedProductList",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getOwnedProducts_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PurchaseRecordList",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getReceivedPresents_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetSubscriptionStatusResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSubscriptionStatus_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "RemoveProductFromSubscriptionSlotResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "removeProductFromSubscriptionSlot_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "productVersion",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductByVersion_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetRecommendOaRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getRecommendOa_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "GetSuggestDictionarySettingRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSuggestDictionarySetting_args",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ProductDetail",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getProductByVersion_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetRecommendOaResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getRecommendOa_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetSuggestDictionarySettingResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ShopException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSuggestDictionarySetting_result",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    }
+]

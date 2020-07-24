@@ -1,0 +1,404 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "set\u003cGetRequest\u003e",
+                "name": "requests",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            }
+        ],
+        "tstruct": "BulkGetRequest",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003cstring,GetResponseOrError\u003e",
+                "name": "values",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "BulkGetResponse",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "set\u003cSetRequest\u003e",
+                "name": "requests",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            }
+        ],
+        "tstruct": "BulkSetRequest",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003cstring,SetResponseOrError\u003e",
+                "name": "values",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "BulkSetResponse",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "keyName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "ns",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.f.s.h.class {\n    CLIENT = 1,\n    SERVER = 2,\n}"
+            }
+        ],
+        "tstruct": "GetRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "SettingValue",
+                "name": "value",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetResponse",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetResponse",
+                "name": "response",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "struct",
+                "name": "error",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetResponseOrError",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "keyName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "TypedValue",
+                "name": "value",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "clientTimestampMillis",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "ns",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.f.s.h.class {\n    CLIENT = 1,\n    SERVER = 2,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "transactionId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SetRequest",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "SettingValue",
+                "name": "value",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "updateTransactionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SetResponse",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "SetResponse",
+                "name": "response",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "struct",
+                "name": "error",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SetResponseOrError",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "TypedValue",
+                "name": "value",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "updateTimeMillis",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "scope",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.f.s.i.class {\n    APP_INSTANCE_LOCAL = 1,\n    APP_TYPE_LOCAL = 2,\n    GLOBAL = 3,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "scopeKey",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SettingValue",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.f.s.n.class {\n    UNKNOWN = 0,\n    NONE = 1,\n    ILLEGAL_ARGUMENT = 16641,\n    NOT_FOUND = 16642,\n    NOT_AVAILABLE = 16643,\n    TOO_LARGE_VALUE = 16644,\n    CLOCK_DRIFT_DETECTED = 16645,\n    UNSUPPORTED_APPLICATION_TYPE = 16646,\n    DUPLICATED_ENTRY = 16647,\n    AUTHENTICATION_FAILED = 16897,\n    INTERNAL_SERVER_ERROR = 20737,\n    SERVICE_IN_MAINTENANCE_MODE = 20738,\n    SERVICE_UNAVAILABLE = 20739,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "parameters",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "SettingsException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "booleanValue",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "i64Value",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "stringValue",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cstring\u003e",
+                "name": "stringListValue",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003ci64\u003e",
+                "name": "i64ListValue",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "rawJsonStringValue",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i8",
+                "name": "i8Value",
+                "requirement": "3",
+                "type": "3",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i16",
+                "name": "i16Value",
+                "requirement": "3",
+                "type": "6",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i32",
+                "name": "i32Value",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "double",
+                "name": "doubleValue",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "list\u003ci8\u003e",
+                "name": "i8ListValue",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "list\u003ci16\u003e",
+                "name": "i16ListValue",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "list\u003ci32\u003e",
+                "name": "i32ListValue",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "TypedValue",
+        "timport": null
+    }
+]

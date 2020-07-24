@@ -1,0 +1,32 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "errorCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.q.a.a.a.class {\n    UNKNOWN = 0,\n    INTERNAL_ERROR = 500,\n    ILLEGAL_ARGUMENT = 400,\n    AUTHENTICATION_FAILED = 401,\n    BOT_NOT_FOUND = 1,\n    BOT_NOT_AVAILABLE = 2,\n    NOT_A_MEMBER = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "parameterMap",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "BotException",
+        "timport": null
+    }
+]

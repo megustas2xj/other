@@ -1,0 +1,543 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "advertisingId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "tracking",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffAdvertisingId",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "chatMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffChatContext",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "LiffNoneContext",
+                "name": "none",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "LiffChatContext",
+                "name": "chat",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "LiffSquareChatContext",
+                "name": "squareChat",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffContext",
+        "timport": [
+            "g.a.i.t0.a",
+            "g.a.i.t0.a",
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "videoAutoPlayAllowed",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "LiffAdvertisingId",
+                "name": "advertisingId",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffDeviceSetting",
+        "timport": [
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "channelId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "consentUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffErrorConsentRequired",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "3",
+                "meta": "LiffErrorConsentRequired",
+                "name": "consentRequired",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffErrorPayload",
+        "timport": [
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.i.t0.a.e.class {\n    INVALID_REQUEST = 1,\n    UNAUTHORIZED = 2,\n    CONSENT_REQUIRED = 3,\n    VERSION_UPDATE_REQUIRED = 4,\n    SERVER_ERROR = 100,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "LiffErrorPayload",
+                "name": "payload",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffException",
+        "timport": [
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "LiffNoneContext",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "LiffViewRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueLiffView_args",
+        "timport": [
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "LiffViewResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "LiffException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueLiffView_result",
+        "timport": [
+            "g.a.i.t0.a",
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "RevokeTokenRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "revokeToken_args",
+        "timport": [
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "LiffException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "revokeToken_result",
+        "timport": [
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "squareChatMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffSquareChatContext",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "titleButtonColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "titleBackgroundColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i32",
+                "name": "progressBarColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "i32",
+                "name": "progressBackgroundColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "bool",
+                "name": "suspendable",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "bool",
+                "name": "suspendableV2",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "bool",
+                "name": "maxBrightness",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "i32",
+                "name": "titleButtonAreaBackgroundColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "i32",
+                "name": "titleButtonAreaBorderColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "i32",
+                "name": "menuStyle",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum g.a.i.t0.a.k.class {\n    LIGHT = 1,\n    LIGHT_TRANSLUCENT = 2,\n    DARK_TRANSLUCENT = 3,\n}"
+            },
+            {
+                "index": "18",
+                "meta": "bool",
+                "name": "moduleMode",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "19",
+                "meta": "i32",
+                "name": "pinToHomeServiceId",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "type",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "url",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "bool",
+                "name": "trustedDomain",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "titleIconUrl",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "titleTextColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "titleSubtextColor",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffView",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "liffId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "lang",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "LiffContext",
+                "name": "context",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "LiffDeviceSetting",
+                "name": "deviceSetting",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "LiffViewRequest",
+        "timport": [
+            "g.a.i.t0.a",
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "LiffView",
+                "name": "view",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "contextToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "accessToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "featureToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003ci32\u003e",
+                "name": "features",
+                "requirement": "2",
+                "type": "15",
+                "note": "enum g.a.i.t0.a.i.class {\n    GEOLOCATION = 1,\n    ADVERTISING_ID = 2,\n    BLUETOOTH_LE = 3,\n    QR_CODE = 4,\n    ADVERTISING_SDK = 5,\n    ADD_TO_HOME = 6,\n    SHARE_TARGET_MESSAGE = 7,\n    VIDEO_AUTO_PLAY = 8,\n    PROFILE_PLUS = 9,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "channelId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "idToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "list\u003cstring\u003e",
+                "name": "scopes",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "list\u003ci32\u003e",
+                "name": "launchOptions",
+                "requirement": "2",
+                "type": "15",
+                "note": "enum g.a.i.t0.a.j.class {\n    ALLOW_DIRECT_LINK = 1,\n}"
+            }
+        ],
+        "tstruct": "LiffViewResponse",
+        "timport": [
+            "g.a.i.t0.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "accessToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "RevokeTokenRequest",
+        "timport": null
+    }
+]

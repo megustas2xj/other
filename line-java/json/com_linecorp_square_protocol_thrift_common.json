@@ -1,0 +1,1207 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ApprovalValue",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "id",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "Category",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "categoryId",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "names",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "CategoryName",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "code",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "CodeValue",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "preconditionFailedExtraInfo",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.PreconditionFailedExtraInfo.class {\n    DUPLICATED_DISPLAY_NAME = 0,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "UserRestrictionExtraInfo",
+                "name": "userRestrictionInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ErrorExtraInfo",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "noteCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "latestCreatedAt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "NoteStatus",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "value",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "highlighted",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "id",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "PopularKeyword",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "11",
+                "meta": "bool",
+                "name": "ableToUseInvitationTicket",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "i32",
+                "name": "state",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareState.class {\n    ALIVE = 0,\n    DELETED = 1,\n    SUSPENDED = 2,\n}"
+            },
+            {
+                "index": "13",
+                "meta": "list\u003ci32\u003e",
+                "name": "emblems",
+                "requirement": "2",
+                "type": "15",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareEmblem.class {\n    SUPER = 1,\n    OFFICIAL = 2,\n}"
+            },
+            {
+                "index": "14",
+                "meta": "SquareJoinMethod",
+                "name": "joinMethod",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "mid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "welcomeMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "profileImageObsHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "desc",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "searchable",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareType.class {\n    CLOSED = 0,\n    OPEN = 1,\n}"
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "categoryId",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "invitationURL",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "Square",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "SquareCleanScore",
+                "name": "cleanScore",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareActivityScore",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "12",
+                "meta": "i32",
+                "name": "createSquareChatAnnouncement",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "13",
+                "meta": "i32",
+                "name": "updateMaxChatMemberCount",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "squareMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "updateSquareProfile",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "inviteNewMember",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "approveJoinRequest",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "createPost",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "createOpenSquareChat",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "deleteSquareChatOrPost",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "removeSquareMember",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "9",
+                "meta": "i32",
+                "name": "grantRole",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "10",
+                "meta": "i32",
+                "name": "enableInvitationTicket",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "11",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareAuthority",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "squareChatMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "squareMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareChatType.class {\n    OPEN = 1,\n    SECRET = 2,\n    ONE_ON_ONE = 3,\n    SQUARE_DEFAULT = 4,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "chatImageObsHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i64",
+                "name": "squareChatRevision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "maxMemberCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "state",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareChatState.class {\n    ALIVE = 0,\n    DELETED = 1,\n    SUSPENDED = 2,\n}"
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "invitationUrl",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareChat",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "announcementSeq",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareChatAnnouncementType.class {\n    TEXT_MESSAGE = 0,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "SquareChatAnnouncementContents",
+                "name": "contents",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "createdAt",
+                "requirement": "2",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "creator",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareChatAnnouncement",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "TextMessageAnnouncementContents",
+                "name": "textMessageAnnouncementContents",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareChatAnnouncementContents",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "squareMemberMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "squareChatMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "membershipState",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareChatMembershipState.class {\n    JOINED = 1,\n    LEFT = 2,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "bool",
+                "name": "notificationForMessage",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "notificationForNewMember",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareChatMember",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "3",
+                "meta": "SquareMessage",
+                "name": "lastMessage",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "senderDisplayName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "SquareChatStatusWithoutMessage",
+                "name": "otherStatus",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareChatStatus",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "memberCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "unreadMessageCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "markedAsReadMessageId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "mentionedMessageId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "notifiedMessageType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.NotifiedMessageType.class {\n    MENTION = 1,\n    REPLY = 2,\n}"
+            }
+        ],
+        "tstruct": "SquareChatStatusWithoutMessage",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "double",
+                "name": "score",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareCleanScore",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "errorCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareErrorCode.class {\n    UNKNOWN = 0,\n    INTERNAL_ERROR = 500,\n    NOT_IMPLEMENTED = 501,\n    TRY_AGAIN_LATER = 503,\n    MAINTENANCE = 505,\n    NO_PRESENCE_EXISTS = 506,\n    ILLEGAL_ARGUMENT = 400,\n    AUTHENTICATION_FAILURE = 401,\n    FORBIDDEN = 403,\n    NOT_FOUND = 404,\n    REVISION_MISMATCH = 409,\n    PRECONDITION_FAILED = 410,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "ErrorExtraInfo",
+                "name": "errorExtraInfo",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareException",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "controlState",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareFeatureControlState.class {\n    DISABLED = 1,\n    ENABLED = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "booleanValue",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.BooleanState.class {\n    NONE = 0,\n    OFF = 1,\n    ON = 2,\n}"
+            }
+        ],
+        "tstruct": "SquareFeature",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "squareMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "SquareFeature",
+                "name": "creatingSecretSquareChat",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "SquareFeature",
+                "name": "invitingIntoOpenSquareChat",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "SquareFeature",
+                "name": "creatingSquareChat",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareFeatureSet",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "Square",
+                "name": "square",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "SquareStatus",
+                "name": "squareStatus",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "NoteStatus",
+                "name": "squareNoteStatus",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareInfo",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareJoinMethodType.class {\n    NONE = 0,\n    APPROVAL = 1,\n    CODE = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "SquareJoinMethodValue",
+                "name": "value",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareJoinMethod",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ApprovalValue",
+                "name": "approvalValue",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "CodeValue",
+                "name": "codeValue",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareJoinMethodValue",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "squareMemberMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "squareMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "displayName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "profileImageObsHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "bool",
+                "name": "ableToReceiveMessage",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "membershipState",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMembershipState.class {\n    JOIN_REQUESTED = 1,\n    JOINED = 2,\n    REJECTED = 3,\n    LEFT = 4,\n    KICK_OUT = 5,\n    BANNED = 6,\n    DELETED = 7,\n}"
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "role",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRole.class {\n    ADMIN = 1,\n    CO_ADMIN = 2,\n    MEMBER = 10,\n}"
+            },
+            {
+                "index": "9",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "SquarePreference",
+                "name": "preference",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "joinMessage",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareMember",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "state",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMemberRelationState.class {\n    NONE = 1,\n    BLOCKED = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareMemberRelation",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "Message",
+                "name": "message",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "fromType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.e.a.b.ve.class {\n    USER = 0,\n    ROOM = 1,\n    GROUP = 2,\n    SQUARE = 3,\n    SQUARE_CHAT = 4,\n    SQUARE_MEMBER = 5,\n    BOT = 6,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "squareMessageRevision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "state",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum com.linecorp.square.protocol.thrift.common.SquareMessageState.class {\n    SENT = 1,\n    DELETED = 2,\n    FORBIDDEN = 3,\n    UNSENT = 4,\n}"
+            }
+        ],
+        "tstruct": "SquareMessage",
+        "timport": [
+            "h0.a.e.a.b"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "SquareMessage",
+                "name": "message",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "Square",
+                "name": "square",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "SquareChat",
+                "name": "chat",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "SquareMember",
+                "name": "sender",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareMessageInfo",
+        "timport": [
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "favoriteTimestamp",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "notiForNewJoinRequest",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquarePreference",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "memberCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "joinRequestCount",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "lastJoinRequestAt",
+                "requirement": "2",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "openChatCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareStatus",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "common",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "search",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareVisibility",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "messageId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "text",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "senderSquareMemberMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "createdAt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "senderMid",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "TextMessageAnnouncementContents",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "linkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "UserRestrictionExtraInfo",
+        "timport": null
+    }
+]

@@ -1,0 +1,3649 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "oldProductId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            }
+        ],
+        "tstruct": "AddProductToSubscriptionSlotRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cBrowsingHistory\u003e",
+                "name": "browsingHistory",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetBrowsingHistoryResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "text",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ImageTextRequestEntry",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "totalCount",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductWishProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "start",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "size",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "StickerIdRange",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "result",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.r3.class {\n    OK = 0,\n    UNKNOWN = 1,\n    NO_SUBSCRIPTION = 2,\n    EXISTS = 3,\n    NOT_FOUND = 4,\n    EXCEEDS_LIMIT = 5,\n    NOT_AVAILABLE = 6,\n}"
+            }
+        ],
+        "tstruct": "AddProductToSubscriptionSlotResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "lastUpdatedTimeMillis",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetOldSticonMappingRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "buddyMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PromotionBuddyInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "hasAnimation",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "hasSound",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "hasPopup",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "stickerResourceType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.c3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n    SOUND = 3,\n    ANIMATION_SOUND = 4,\n    POPUP = 5,\n    POPUP_SOUND = 6,\n    NAME_TEXT = 7,\n    PER_STICKER_TEXT = 8,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "stickerOptions",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "compactStickerOptions",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "stickerHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "list\u003cstring\u003e",
+                "name": "stickerIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "ImageTextProperty",
+                "name": "nameTextProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "bool",
+                "name": "availableForPhotoEdit",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "stickerDefaultTexts",
+                "requirement": "2",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "i32",
+                "name": "stickerSize",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.d3.class {\n    NORMAL = 0,\n    BIG = 1,\n}"
+            }
+        ],
+        "tstruct": "StickerProperty",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "id",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "categoryType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.i.class {\n    GENERAL_CATEGORY = 1,\n    CREATORS_TAG = 2,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "productCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "thumbnailUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "AggregatedCategory",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cSticonProductMapping\u003e",
+                "name": "sticonProductMappings",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "updatedTimeMillis",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "updated",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetOldSticonMappingResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "displayName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "version",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "bool",
+                "name": "newFlag",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "ProductResourceType",
+                "name": "productResourceType",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "LatestProductByAuthorItem",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PromotionBuddyInfo",
+                "name": "promotionBuddyInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "PromotionInstallInfo",
+                "name": "promotionInstallInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "PromotionMissionInfo",
+                "name": "promotionMissionInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "PromotionDetail",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "lowerBound",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "lowerBoundInclusive",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "upperBound",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "bool",
+                "name": "upperBoundInclusive",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "ApplicationVersionRange",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "carrierCode",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "bool",
+                "name": "saveBrowsingHistory",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetProductRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "authorId",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "LatestProductsByAuthorRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "promotionType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.h2.class {\n    NONE = 0,\n    CARRIER = 1,\n    BUDDY = 2,\n    INSTALL = 3,\n    MISSION = 4,\n    MUSTBUY = 5,\n}"
+            },
+            {
+                "index": "51",
+                "meta": "PromotionBuddyInfo",
+                "name": "buddyInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "PromotionDetail",
+                "name": "promotionDetail",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "PromotionInfo",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "suggestionType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.w3.class {\n    NOT_PURCHASED = 0,\n    SUBSCRIPTION = 1,\n}"
+            }
+        ],
+        "tstruct": "AutoSuggestionShowcaseRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ProductDetail",
+                "name": "productDetail",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetProductResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "authorId",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "author",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "list\u003cLatestProductByAuthorItem\u003e",
+                "name": "items",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "LatestProductsByAuthorResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "downloadUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "customUrlSchema",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PromotionInstallInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cStickerIdRange\u003e",
+                "name": "stickerIdRanges",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "suggestVersion",
+                "requirement": "2",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "stickerHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "bool",
+                "name": "defaultDisplayOnKeyboard",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "stickerResourceType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.c3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n    SOUND = 3,\n    ANIMATION_SOUND = 4,\n    POPUP = 5,\n    POPUP_SOUND = 6,\n    NAME_TEXT = 7,\n    PER_STICKER_TEXT = 8,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "ImageTextProperty",
+                "name": "nameTextProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "bool",
+                "name": "availableForPhotoEdit",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "StickerSummary",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cProductSummaryForAutoSuggest\u003e",
+                "name": "productList",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "AutoSuggestionShowcaseResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetProductSummariesInSubscriptionSlotsRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ListContentData",
+                "name": "contentData",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "localizedTitle",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "tsKey",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "moreLinkFragment",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ListContent",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "promotionMissionType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.g2.class {\n    DEFAULT = 1,\n    VIEW_VIDEO = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "missionCompleted",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "downloadUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "customUrlSchema",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PromotionMissionInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "oldProductId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "newToOldSticonIdMapping",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "oldPackageVersion",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "oldMetaVersion",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i64",
+                "name": "stickerPackageId",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "stickerPackageVersion",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "stickerIds",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "SticonProductMapping",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ProductSearchSummary",
+                "name": "productSearchSummary",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "browsingTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "BrowsingHistory",
+        "timport": [
+            "jp.naver.line.shop.protocol.thrift"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cProductSummary\u003e",
+                "name": "products",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "maxSlotCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetProductSummariesInSubscriptionSlotsResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ShowcaseV3",
+                "name": "showcase",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cEditorsPickBanner\u003e",
+                "name": "editorsPickBanners",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "list\u003cAggregatedCategory\u003e",
+                "name": "categories",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "ListContentData",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "list\u003cstring\u003e",
+                "name": "sticonIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "availableForPhotoEdit",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "sticonResourceType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.h3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n}"
+            }
+        ],
+        "tstruct": "SticonProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "serialNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "BuyMustbuyRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetRecommendOaRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "language",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "country",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "Locale",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "buddyMids",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetRecommendOaResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "landingPageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "label",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "LpPromotionProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "recipientMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "Price",
+                "name": "price",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "bool",
+                "name": "enableLinePointAutoExchange",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "21",
+                "meta": "Locale",
+                "name": "locale",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "31",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "presentAttributes",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "PurchaseOrder",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "suggestVersion",
+                "requirement": "2",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "availableForPhotoEdit",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "SticonSummary",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "billingItemId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "storeCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.j3.class {\n    GOOGLE = 0,\n    APPLE = 1,\n    WEBSTORE = 2,\n}"
+            }
+        ],
+        "tstruct": "ChangeSubscriptionRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "recommendationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.o2.class {\n    UNKNOWN = 0,\n    PRODUCT = 1,\n    USER = 2,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "set\u003ci32\u003e",
+                "name": "subtypes",
+                "requirement": "2",
+                "type": "14",
+                "note": "enum h0.a.a.c.a.a.t3.class {\n    GENERAL = 0,\n    CREATORS = 1,\n    STICON = 2,\n}"
+            },
+            {
+                "index": "7",
+                "meta": "bool",
+                "name": "shouldShuffle",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "bool",
+                "name": "includeStickerIds",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "ShopFilter",
+                "name": "shopFilter",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetRecommendationRequest",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "currency",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "amount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "priceString",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "Price",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "orderId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "attributes",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "billingConfirmUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PurchaseOrderResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "result",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.l3.class {\n    OK = 0,\n    UNKNOWN = 1,\n    NOT_SUPPORTED = 2,\n    NO_SUBSCRIPTION = 3,\n    SUBSCRIPTION_EXISTS = 4,\n    NOT_AVAILABLE = 5,\n    CONFLICT = 6,\n    OUTDATED_VERSION = 7,\n    NO_STUDENT_INFORMATION = 8,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "orderId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "confirmUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ChangeSubscriptionResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cProductSearchSummary\u003e",
+                "name": "results",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetRecommendationResponse",
+        "timport": [
+            "jp.naver.line.shop.protocol.thrift"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ProductDetail",
+                "name": "productDetail",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i64",
+                "name": "purchasedTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "21",
+                "meta": "string",
+                "name": "giver",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "22",
+                "meta": "string",
+                "name": "recipient",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "31",
+                "meta": "Price",
+                "name": "purchasedPrice",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "PurchaseRecord",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "schoolName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "graduationDate",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "StudentInformation",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "ImageTextRequestEntry",
+                "name": "nameRequestEntry",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "CustomizeImageTextRequest",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetTagClusterFileResponse",
+                "name": "tagClusterFileResponse",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetResourceFileReponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "93",
+                "meta": "string",
+                "name": "authorId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "94",
+                "meta": "i32",
+                "name": "stickerResourceType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.c3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n    SOUND = 3,\n    ANIMATION_SOUND = 4,\n    POPUP = 5,\n    POPUP_SOUND = 6,\n    NAME_TEXT = 7,\n    PER_STICKER_TEXT = 8,\n}"
+            },
+            {
+                "index": "95",
+                "meta": "ProductProperty",
+                "name": "productProperty",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "96",
+                "meta": "i32",
+                "name": "productSalesState",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q1.class {\n    ON_SALE = 0,\n    OUTDATED_VERSION = 1,\n    NOT_ON_SALE = 2,\n}"
+            },
+            {
+                "index": "97",
+                "meta": "i64",
+                "name": "installedTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "101",
+                "meta": "ProductWishProperty",
+                "name": "wishProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "102",
+                "meta": "ProductSubscriptionProperty",
+                "name": "subscriptionProperty",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "103",
+                "meta": "ProductPromotionProperty",
+                "name": "productPromotionProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "billingItemId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "billingCpId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "type",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "subtype",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.t3.class {\n    GENERAL = 0,\n    CREATORS = 1,\n    STICON = 2,\n}"
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "author",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "string",
+                "name": "details",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "string",
+                "name": "copyright",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "string",
+                "name": "notice",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "PromotionInfo",
+                "name": "promotionInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "21",
+                "meta": "i64",
+                "name": "latestVersion",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "22",
+                "meta": "string",
+                "name": "latestVersionString",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "23",
+                "meta": "i64",
+                "name": "version",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "24",
+                "meta": "string",
+                "name": "versionString",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "25",
+                "meta": "ApplicationVersionRange",
+                "name": "applicationVersionRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "31",
+                "meta": "bool",
+                "name": "owned",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "32",
+                "meta": "bool",
+                "name": "grantedByDefault",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "41",
+                "meta": "i32",
+                "name": "validFor",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "42",
+                "meta": "i64",
+                "name": "validUntil",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "51",
+                "meta": "bool",
+                "name": "onSale",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "52",
+                "meta": "set\u003cstring\u003e",
+                "name": "salesFlags",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            },
+            {
+                "index": "53",
+                "meta": "bool",
+                "name": "availableForPresent",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "54",
+                "meta": "bool",
+                "name": "availableForMyself",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "61",
+                "meta": "i32",
+                "name": "priceTier",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "62",
+                "meta": "Price",
+                "name": "price",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "63",
+                "meta": "string",
+                "name": "priceInLineCoin",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "64",
+                "meta": "Price",
+                "name": "localizedPrice",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "91",
+                "meta": "map\u003cstring,list\u003cstring\u003e\u003e",
+                "name": "images",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "92",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "attributes",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductDetail",
+        "timport": [
+            "jp.naver.line.shop.protocol.thrift",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cPurchaseRecord\u003e",
+                "name": "purchaseRecords",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "PurchaseRecordList",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ImageTextProperty",
+                "name": "nameTextProperty",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "CustomizeImageTextResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetTagClusterFileRequest",
+                "name": "tagClusterFileRequest",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetResourceFileRequest",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cProductDetail\u003e",
+                "name": "productList",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductList",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "billingItemId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "storeCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.j3.class {\n    GOOGLE = 0,\n    APPLE = 1,\n    WEBSTORE = 2,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "storeOrderId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PurchaseSubscriptionRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "billingItemId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "target",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.o3.class {\n    GENERAL = 1,\n    STUDENT = 2,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.p3.class {\n    MONTHLY = 1,\n    YEARLY = 2,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "period",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "freeTrial",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "localizedName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "Price",
+                "name": "price",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i32",
+                "name": "availability",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.n3.class {\n    AVAILABLE = 0,\n    DIFFERENT_STORE = 1,\n    NOT_STUDENT = 2,\n    ALREADY_PURCHASED = 3,\n}"
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "cpId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "nameKey",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SubscriptionPlan",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "GetStudentInformationRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "authorId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "ShopFilter",
+                "name": "shopFilter",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductListByAuthorRequest",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "result",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.l3.class {\n    OK = 0,\n    UNKNOWN = 1,\n    NOT_SUPPORTED = 2,\n    NO_SUBSCRIPTION = 3,\n    SUBSCRIPTION_EXISTS = 4,\n    NOT_AVAILABLE = 5,\n    CONFLICT = 6,\n    OUTDATED_VERSION = 7,\n    NO_STUDENT_INFORMATION = 8,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "orderId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "confirmUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PurchaseSubscriptionResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "StudentInformation",
+                "name": "studentInformation",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "isValid",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetStudentInformationResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "LpPromotionProperty",
+                "name": "lpPromotionProperty",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductPromotionProperty",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "demographicGenderType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.o.class {\n    ALL = 0,\n    MALE = 1,\n    FEMALE = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "demographicAgeType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.n.class {\n    ALL = 0,\n    AGE_0_19 = 1,\n    AGE_20_30 = 2,\n    AGE_30_39 = 3,\n    AGE_40_INF = 4,\n}"
+            }
+        ],
+        "tstruct": "DemographicType",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "storeCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.j3.class {\n    GOOGLE = 0,\n    APPLE = 1,\n    WEBSTORE = 2,\n}"
+            }
+        ],
+        "tstruct": "GetSubscriptionPlansRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "stickerResourceType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.c3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n    SOUND = 3,\n    ANIMATION_SOUND = 4,\n    POPUP = 5,\n    POPUP_SOUND = 6,\n    NAME_TEXT = 7,\n    PER_STICKER_TEXT = 8,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "themeResourceType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.y3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "sticonResourceType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.h3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n}"
+            }
+        ],
+        "tstruct": "ProductResourceType",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "productId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            }
+        ],
+        "tstruct": "RemoveProductFromSubscriptionSlotRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cProductDetail\u003e",
+                "name": "productList",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "DetailedProductList",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cSubscriptionPlan\u003e",
+                "name": "plans",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSubscriptionPlansResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "result",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.r3.class {\n    OK = 0,\n    UNKNOWN = 1,\n    NO_SUBSCRIPTION = 2,\n    EXISTS = 3,\n    NOT_FOUND = 4,\n    EXCEEDS_LIMIT = 5,\n    NOT_AVAILABLE = 6,\n}"
+            }
+        ],
+        "tstruct": "RemoveProductFromSubscriptionSlotResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            }
+        ],
+        "tstruct": "DynamicHomeNativeRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "GetSubscriptionStatusRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "availableForSubscribe",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "subscriptionAvailability",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.k1.class {\n    PURCHASE_ONLY = 0,\n    PURCHASE_OR_SUBSCRIPTION = 1,\n    SUBSCRIPTION_ONLY = 2,\n}"
+            }
+        ],
+        "tstruct": "ProductSubscriptionProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "StudentInformation",
+                "name": "studentInformation",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SaveStudentInformationRequest",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cListContent\u003e",
+                "name": "listContents",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "DynamicHomeNativeResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003ci32,SubscriptionStatus\u003e",
+                "name": "subscriptions",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "hasValidStudentInformation",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSubscriptionStatusResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "21",
+                "meta": "i64",
+                "name": "latestVersion",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "25",
+                "meta": "ApplicationVersionRange",
+                "name": "applicationVersionRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "32",
+                "meta": "bool",
+                "name": "grantedByDefault",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "92",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "attributes",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "93",
+                "meta": "ProductTypeSummary",
+                "name": "productTypeSummary",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "94",
+                "meta": "i64",
+                "name": "validUntil",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "95",
+                "meta": "i32",
+                "name": "validFor",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "96",
+                "meta": "i64",
+                "name": "installedTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "97",
+                "meta": "i32",
+                "name": "availability",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.k1.class {\n    PURCHASE_ONLY = 0,\n    PURCHASE_OR_SUBSCRIPTION = 1,\n    SUBSCRIPTION_ONLY = 2,\n}"
+            },
+            {
+                "index": "98",
+                "meta": "string",
+                "name": "authorId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductSummary",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "SaveStudentInformationResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "billingItemId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "period",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "localizedName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "bool",
+                "name": "freeTrial",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "expired",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i64",
+                "name": "validUntil",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "stickerSlotCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i32",
+                "name": "target",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.o3.class {\n    GENERAL = 1,\n    STUDENT = 2,\n}"
+            },
+            {
+                "index": "10",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.p3.class {\n    MONTHLY = 1,\n    YEARLY = 2,\n}"
+            },
+            {
+                "index": "11",
+                "meta": "i32",
+                "name": "storeCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.j3.class {\n    GOOGLE = 0,\n    APPLE = 1,\n    WEBSTORE = 2,\n}"
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "nameKey",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SubscriptionStatus",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "id",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "imageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "homeBannerImageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "showcaseBannerImageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003ci32\u003e",
+                "name": "enableEditorsPickShowcaseTypes",
+                "requirement": "3",
+                "type": "15",
+                "note": "enum h0.a.a.c.a.a.u.class {\n    STATIC = 0,\n    POPULAR = 1,\n    NEW_RELEASE = 2,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "defaulteditorsPickShowcaseType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.u.class {\n    STATIC = 0,\n    POPULAR = 1,\n    NEW_RELEASE = 2,\n}"
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "homeBannerV2ImageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "bool",
+                "name": "containsProducts",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "i64",
+                "name": "displayPeriodBegin",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "description",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "bool",
+                "name": "showNewBadge",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "EditorsPickBanner",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "GetSuggestDictionarySettingRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "version",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "stickerResourceType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.c3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n    SOUND = 3,\n    ANIMATION_SOUND = 4,\n    POPUP = 5,\n    POPUP_SOUND = 6,\n    NAME_TEXT = 7,\n    PER_STICKER_TEXT = 8,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "i64",
+                "name": "suggestVersion",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductSummaryForAutoSuggest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cSuggestDictionarySetting\u003e",
+                "name": "results",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSuggestDictionarySettingResponse",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cProductSummary\u003e",
+                "name": "productList",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "offset",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductSummaryList",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.t2.class {\n    UNKNOWN = 0,\n    NONE = 1,\n    ILLEGAL_ARGUMENT = 16641,\n    NOT_FOUND = 16642,\n    NOT_AVAILABLE = 16643,\n    NOT_PAID_PRODUCT = 16644,\n    NOT_FREE_PRODUCT = 16645,\n    ALREADY_OWNED = 16646,\n    ERROR_WITH_CUSTOM_MESSAGE = 16647,\n    NOT_AVAILABLE_TO_RECIPIENT = 16648,\n    NOT_AVAILABLE_FOR_CHANNEL_ID = 16649,\n    NOT_SALE_FOR_COUNTRY = 16650,\n    NOT_SALES_PERIOD = 16651,\n    NOT_SALE_FOR_DEVICE = 16652,\n    NOT_SALE_FOR_VERSION = 16653,\n    ALREADY_EXPIRED = 16654,\n    AUTHENTICATION_FAILED = 16897,\n    BALANCE_SHORTAGE = 17153,\n    INTERNAL_SERVER_ERROR = 20737,\n    SERVICE_IN_MAINTENANCE_MODE = 20738,\n    SERVICE_UNAVAILABLE = 20739,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "parameterMap",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "ShopException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "language",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "preload",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "SuggestResource",
+                "name": "suggestResource",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "map\u003ci64,i64\u003e",
+                "name": "patch",
+                "requirement": "2",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "SuggestResource",
+                "name": "suggestTagResource",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "map\u003ci64,i64\u003e",
+                "name": "tagPatch",
+                "requirement": "2",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "SuggestDictionarySetting",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "clientPublicKey",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "EstablishE2EESessionRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cstring\u003e",
+                "name": "productIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSuggestResourcesV2Request",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "set\u003ci32\u003e",
+                "name": "productAvailabilities",
+                "requirement": "2",
+                "type": "14",
+                "note": "enum h0.a.a.c.a.a.k1.class {\n    PURCHASE_ONLY = 0,\n    PURCHASE_OR_SUBSCRIPTION = 1,\n    SUBSCRIPTION_ONLY = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "set\u003ci32\u003e",
+                "name": "stickerSizes",
+                "requirement": "2",
+                "type": "14",
+                "note": "enum h0.a.a.c.a.a.d3.class {\n    NORMAL = 0,\n    BIG = 1,\n}"
+            }
+        ],
+        "tstruct": "ShopFilter",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "dataUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "version",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "updatedTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "SuggestResource",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "sessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "serverPublicKey",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "expireAt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "EstablishE2EESessionResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003cstring,SuggestResource\u003e",
+                "name": "suggestResources",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSuggestResourcesV2Response",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "StickerSummary",
+                "name": "stickerSummary",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "ThemeSummary",
+                "name": "themeSummary",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "SticonSummary",
+                "name": "sticonSummary",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductTypeSummary",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "shopId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i64",
+                "name": "latestUpdateTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "ShopUpdates",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "subscriptionService",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.q3.class {\n    STICKERS_PREMIUM = 1,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cstring\u003e",
+                "name": "storeOrderIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "FindRestorablePlanRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "GetTagClusterFileRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ProductValidationScheme",
+                "name": "validationScheme",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "authCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductValidationRequest",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "showcaseType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.y2.class {\n    POPULAR = 0,\n    NEW_RELEASE = 1,\n    EVENT = 2,\n    RECOMMENDED = 3,\n    POPULAR_WEEKLY = 4,\n    POPULAR_MONTHLY = 5,\n    POPULAR_RECENTLY_PUBLISHED = 6,\n    BUDDY = 7,\n    EXTRA_EVENT = 8,\n    BROWSING_HISTORY = 9,\n    POPULAR_TOTAL_SALES = 10,\n    NEW_SUBSCRIPTION = 11,\n    POPULAR_SUBSCRIPTION_30D = 12,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "subType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.t3.class {\n    GENERAL = 0,\n    CREATORS = 1,\n    STICON = 2,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "set\u003cProductResourceType\u003e",
+                "name": "productResourceTypes",
+                "requirement": "2",
+                "type": "14",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "DemographicType",
+                "name": "demographicType",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ShowcaseRequest",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "thumbnailUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "themeResourceType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.y3.class {\n    STATIC = 1,\n    ANIMATION = 2,\n}"
+            }
+        ],
+        "tstruct": "ThemeProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "result",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.l3.class {\n    OK = 0,\n    UNKNOWN = 1,\n    NOT_SUPPORTED = 2,\n    NO_SUBSCRIPTION = 3,\n    SUBSCRIPTION_EXISTS = 4,\n    NOT_AVAILABLE = 5,\n    CONFLICT = 6,\n    OUTDATED_VERSION = 7,\n    NO_STUDENT_INFORMATION = 8,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "billingItemId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "storeOrderId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "originalStoreOrderId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "orderId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "mid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "FindRestorablePlanResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "path",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "updatedTimeMillis",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetTagClusterFileResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "validated",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductValidationResult",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "set\u003ci32\u003e",
+                "name": "productTypes",
+                "requirement": "3",
+                "type": "14",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "limit",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "ShopFilter",
+                "name": "shopFilter",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetBrowsingHistoryRequest",
+        "timport": [
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.b1.class {\n    OK = 0,\n    PRODUCT_UNSUPPORTED = 1,\n    TEXT_NOT_SPECIFIED = 2,\n    TEXT_STYLE_UNAVAILABLE = 3,\n    CHARACTER_COUNT_LIMIT_EXCEEDED = 4,\n    CONTAINS_INVALID_WORD = 5,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "plainText",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "nameTextMaxCharacterCount",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "encryptedText",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ImageTextProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "key",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i64",
+                "name": "offset",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "i64",
+                "name": "size",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductValidationScheme",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cProductSearchSummary\u003e",
+                "name": "productList",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "totalSize",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "showcaseType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.y2.class {\n    POPULAR = 0,\n    NEW_RELEASE = 1,\n    EVENT = 2,\n    RECOMMENDED = 3,\n    POPULAR_WEEKLY = 4,\n    POPULAR_MONTHLY = 5,\n    POPULAR_RECENTLY_PUBLISHED = 6,\n    BUDDY = 7,\n    EXTRA_EVENT = 8,\n    BROWSING_HISTORY = 9,\n    POPULAR_TOTAL_SALES = 10,\n    NEW_SUBSCRIPTION = 11,\n    POPULAR_SUBSCRIPTION_30D = 12,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "subType",
+                "requirement": "2",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.t3.class {\n    GENERAL = 0,\n    CREATORS = 1,\n    STICON = 2,\n}"
+            },
+            {
+                "index": "7",
+                "meta": "DemographicType",
+                "name": "demographicType",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ShowcaseV3",
+        "timport": [
+            "jp.naver.line.shop.protocol.thrift",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "ThemeSummary",
+        "timport": null
+    }
+]

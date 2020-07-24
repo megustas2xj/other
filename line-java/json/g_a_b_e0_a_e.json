@@ -1,0 +1,1492 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "mid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "AddFriendData",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "12",
+                "meta": "i32",
+                "name": "categoryIcon",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "list\u003cAdditionalInfoItem\u003e",
+                "name": "additionalInfo",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "mid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "address",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "double",
+                "name": "latitude",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "double",
+                "name": "longitude",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "double",
+                "name": "distance",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "bool",
+                "name": "canFreeCall",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i32",
+                "name": "countryCode",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "phoneNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i32",
+                "name": "categoryId",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "YellowpageItem",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "descr",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "iconUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "link",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "AdditionalInfoItem",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "AutocompleteRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAutocomplete_args",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "candidate",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "AutocompleteCandidate",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "AutocompleteResult",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SearchException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAutocomplete_result",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "query",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "region",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "source",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "sid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "AutocompleteRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "set\u003ci32\u003e",
+                "name": "noticeTypes",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "region",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getNotice_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "modifiedQueries",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cAutocompleteCandidate\u003e",
+                "name": "candidates",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "AutocompleteResult",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "map\u003ci32,list\u003cNotice\u003e\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SearchException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getNotice_result",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "AddFriendData",
+                "name": "addFriendData",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "InstallAppData",
+                "name": "installAppData",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "JumpUrlData",
+                "name": "jumpUrlData",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ButtonActionData",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "collection",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "categoryId",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "CategoryItem",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "double",
+                "name": "latitude",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "double",
+                "name": "longitude",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "displayAddress",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GeoAddressItem",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "set\u003ci32\u003e",
+                "name": "searchSectionTypes",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "region",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSearchSection_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "installData",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "InstallAppData",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "map\u003ci32,SearchSection\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SearchException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSearchSection_result",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "JumpUrlData",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "query",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "SearchCommonParameter",
+                "name": "param",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "currentCollection",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "searchAll_args",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "keyword",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "iconPath",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "label",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "bool",
+                "name": "locationInfoAgreement",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "KeywordInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "SearchResult",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SearchException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "searchAll_result",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "notice",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "startTime",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "endTime",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "Notice",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PortalSearchCollection",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "link",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cPortalSearchCollection\u003e",
+                "name": "collections",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "PortalSearchSummary",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "double",
+                "name": "latitude",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "double",
+                "name": "longitude",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "source",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "region",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "sid",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "queryType",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "UserEvent",
+                "name": "userEvent",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchCommonParameter",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "query",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "SearchPagingParameter",
+                "name": "param",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "searchCollection_args",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "SearchResult",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SearchException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "searchCollection_result",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.e.q.class {\n    UNKNOWN = 0,\n    SUCCESS = 1,\n    AUTHENTICATION_FAILURE = 2,\n    TIMEOUT = 3,\n    MAINTENANCE = 4,\n    ILLEGAL_ARGUMENT = 5,\n    INTERNAL_ERROR = 6,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "extra",
+                "requirement": "2",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "CategoryItem",
+                "name": "categoryItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "SpotItem",
+                "name": "spotItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "ProductSearchSummary",
+                "name": "productItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "ServiceItem",
+                "name": "serviceItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "YellowpageItem",
+                "name": "yellowpageItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "BuddySearchResult",
+                "name": "oaItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "GeoAddressItem",
+                "name": "geoAddressItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "ShortcutItem",
+                "name": "shortcutItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "SquareInfo",
+                "name": "squareItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "Category",
+                "name": "squareCategoryItem",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "PortalSearchSummary",
+                "name": "portalSearchSummary",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchItemUnion",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "h0.a.e.a.b",
+            "jp.naver.line.shop.protocol.thrift",
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e",
+            "h0.a.e.a.b",
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e",
+            "com.linecorp.square.protocol.thrift.common",
+            "com.linecorp.square.protocol.thrift.common",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "collection",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "start",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "length",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "SearchCommonParameter",
+                "name": "commonParam",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchPagingParameter",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "sid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cSearchResultCollection\u003e",
+                "name": "collections",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "start",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "length",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchResult",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "collection",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "rank",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "hits",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003cSearchResultItem\u003e",
+                "name": "items",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "hasNext",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "list\u003ci32\u003e",
+                "name": "categoryId",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "error",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "tabTitle",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "i32",
+                "name": "start",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i32",
+                "name": "length",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "i32",
+                "name": "squareCategoryId",
+                "requirement": "2",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchResultCollection",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "subType",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "appId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "channelId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "badge",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "iconUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "downloadUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "launchScheme",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "bool",
+                "name": "iconTint",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "ServiceItem",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "SearchItemUnion",
+                "name": "item",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "title",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "sub1",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "sub2",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "iconUrl",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "titleLink",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "iconLink",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "displayTemplate",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "list\u003cAdditionalInfoItem\u003e",
+                "name": "additionalInfo",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchResultItem",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "url",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "iconPath",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "ShortcutButtonAction",
+                "name": "action",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ShortcutButton",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "list\u003cKeywordInfo\u003e",
+                "name": "keywordInfos",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "SearchSection",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "actionType",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "ButtonActionData",
+                "name": "actionData",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ShortcutButtonAction",
+        "timport": [
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "descr",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "iconPath",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "url",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "list\u003cShortcutButton\u003e",
+                "name": "buttons",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "ShortcutButtonAction",
+                "name": "action",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ShortcutItem",
+        "timport": [
+            "g.a.b.e0.a.e",
+            "g.a.b.e0.a.e"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "endOfInput",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "showPortalSearchBtn",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "UserEvent",
+        "timport": null
+    }
+]

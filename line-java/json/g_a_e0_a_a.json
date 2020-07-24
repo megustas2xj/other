@@ -1,0 +1,268 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "chatappId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "icon",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "url",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003ci32\u003e",
+                "name": "availableChatTypes",
+                "requirement": "3",
+                "type": "15",
+                "note": "enum g.a.e0.a.a.a.class {\n    PERSONAL = 1,\n    ROOM = 2,\n    GROUP = 3,\n    SQUARE_CHAT = 4,\n}"
+            }
+        ],
+        "tstruct": "Chatapp",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.e0.a.a.d.class {\n    INVALID_REQUEST = 1,\n    UNAUTHORIZED = 2,\n    SERVER_ERROR = 100,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ChatappException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetChatappRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getChatapp_args",
+        "timport": [
+            "g.a.e0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetChatappResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ChatappException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getChatapp_result",
+        "timport": [
+            "g.a.e0.a.a",
+            "g.a.e0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetMyChatappsRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getMyChatapps_args",
+        "timport": [
+            "g.a.e0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetMyChatappsResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ChatappException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getMyChatapps_result",
+        "timport": [
+            "g.a.e0.a.a",
+            "g.a.e0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "chatappId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "language",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetChatappRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "Chatapp",
+                "name": "app",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetChatappResponse",
+        "timport": [
+            "g.a.e0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "language",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetMyChatappsRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cMyChatapp\u003e",
+                "name": "apps",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "continuationToken",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetMyChatappsResponse",
+        "timport": [
+            "g.a.e0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "Chatapp",
+                "name": "app",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "category",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.e0.a.a.c.class {\n    PRIORITY = 2,\n    REGULAR = 1,\n    MORE = 3,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "priority",
+                "requirement": "2",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "MyChatapp",
+        "timport": [
+            "g.a.e0.a.a"
+        ]
+    }
+]

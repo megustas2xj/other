@@ -1,0 +1,24 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "exceptionCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.n0.a.a.a.b.a.class {\n    INTERNAL_ERROR = 0,\n    ILLEGAL_ARGUMENT = 1,\n    VERIFICATION_FAILED = 2,\n    NOT_FOUND = 3,\n    RETRY_LATER = 4,\n    HUMAN_VERIFICATION_REQUIRED = 5,\n    INVALID_CONTEXT = 100,\n    APP_UPGRADE_REQUIRED = 101,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "HomeException",
+        "timport": null
+    }
+]

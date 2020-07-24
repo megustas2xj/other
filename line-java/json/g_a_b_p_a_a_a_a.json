@@ -1,0 +1,666 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "actionInterval",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cBeaconCondition\u003e",
+                "name": "actionAndConditions",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "actionDelay",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003clist\u003cBeaconCondition\u003e\u003e",
+                "name": "actionConditions",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "BeaconBackgroundNotification",
+        "timport": [
+            "g.a.b.p.a.a.a.a",
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "inFriends",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "notInFriends",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "termsAgreed",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "BeaconCondition",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "pictureUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "label",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "text",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cstring\u003e",
+                "name": "actions",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003cBeaconCondition\u003e",
+                "name": "showOrConditions",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "list\u003clist\u003cBeaconCondition\u003e\u003e",
+                "name": "showConditions",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i64",
+                "name": "timeToHide",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "BeaconLayerInfoAndActions",
+        "timport": [
+            "g.a.b.p.a.a.a.a",
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "minor",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "double",
+                "name": "effectiveRange",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "list\u003cstring\u003e",
+                "name": "channelWhiteList",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "i64",
+                "name": "actionId",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "i64",
+                "name": "stayReportInterval",
+                "requirement": "2",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "i64",
+                "name": "leaveThresholdTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "double",
+                "name": "touchThreshold",
+                "requirement": "3",
+                "type": "4",
+                "note": ""
+            },
+            {
+                "index": "18",
+                "meta": "i16",
+                "name": "cutoffThreshold",
+                "requirement": "3",
+                "type": "6",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cstring\u003e",
+                "name": "deprecated_actionUrls",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "cacheTtl",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "BeaconTouchActions",
+                "name": "touchActions",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "BeaconLayerInfoAndActions",
+                "name": "layerInfoAndActions",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "BeaconBackgroundNotification",
+                "name": "backgroundEnteringNotification",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "BeaconBackgroundNotification",
+                "name": "backgroundLeavingNotification",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "group",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "major",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "BeaconQueryResponse",
+        "timport": [
+            "g.a.b.p.a.a.a.a",
+            "g.a.b.p.a.a.a.a",
+            "g.a.b.p.a.a.a.a",
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "hwid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "secureMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "applicationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.p.a.a.a.a.a.class {\n    IOS = 16,\n    IOS_RC = 17,\n    IOS_BETA = 18,\n    IOS_ALPHA = 19,\n    ANDROID = 32,\n    ANDROID_RC = 33,\n    ANDROID_BETA = 34,\n    ANDROID_ALPHA = 35,\n    WAP = 48,\n    WAP_RC = 49,\n    WAP_BETA = 50,\n    WAP_ALPHA = 51,\n    BOT = 64,\n    BOT_RC = 65,\n    BOT_BETA = 66,\n    BOT_ALPHA = 67,\n    WEB = 80,\n    WEB_RC = 81,\n    WEB_BETA = 82,\n    WEB_ALPHA = 83,\n    DESKTOPWIN = 96,\n    DESKTOPWIN_RC = 97,\n    DESKTOPWIN_BETA = 98,\n    DESKTOPWIN_ALPHA = 99,\n    DESKTOPMAC = 112,\n    DESKTOPMAC_RC = 113,\n    DESKTOPMAC_BETA = 114,\n    DESKTOPMAC_ALPHA = 115,\n    CHANNELGW = 128,\n    CHANNELGW_RC = 129,\n    CHANNELGW_BETA = 130,\n    CHANNELGW_ALPHA = 131,\n    CHANNELCP = 144,\n    CHANNELCP_RC = 145,\n    CHANNELCP_BETA = 146,\n    CHANNELCP_ALPHA = 147,\n    WINPHONE = 160,\n    WINPHONE_RC = 161,\n    WINPHONE_BETA = 162,\n    WINPHONE_ALPHA = 163,\n    BLACKBERRY = 176,\n    BLACKBERRY_RC = 177,\n    BLACKBERRY_BETA = 178,\n    BLACKBERRY_ALPHA = 179,\n    WINMETRO = 192,\n    WINMETRO_RC = 193,\n    WINMETRO_BETA = 194,\n    WINMETRO_ALPHA = 195,\n    S40 = 208,\n    S40_RC = 209,\n    S40_BETA = 210,\n    S40_ALPHA = 211,\n    CHRONO = 224,\n    CHRONO_RC = 225,\n    CHRONO_BETA = 226,\n    CHRONO_ALPHA = 227,\n    TIZEN = 256,\n    TIZEN_RC = 257,\n    TIZEN_BETA = 258,\n    TIZEN_ALPHA = 259,\n    VIRTUAL = 272,\n    FIREFOXOS = 288,\n    FIREFOXOS_RC = 289,\n    FIREFOXOS_BETA = 290,\n    FIREFOXOS_ALPHA = 291,\n    IOSIPAD = 304,\n    IOSIPAD_RC = 305,\n    IOSIPAD_BETA = 306,\n    IOSIPAD_ALPHA = 307,\n    BIZIOS = 320,\n    BIZIOS_RC = 321,\n    BIZIOS_BETA = 322,\n    BIZIOS_ALPHA = 323,\n    BIZANDROID = 336,\n    BIZANDROID_RC = 337,\n    BIZANDROID_BETA = 338,\n    BIZANDROID_ALPHA = 339,\n    BIZBOT = 352,\n    BIZBOT_RC = 353,\n    BIZBOT_BETA = 354,\n    BIZBOT_ALPHA = 355,\n    CHROMEOS = 368,\n    CHROMEOS_RC = 369,\n    CHROMEOS_BETA = 370,\n    CHROMEOS_ALPHA = 371,\n    ANDROIDLITE = 384,\n    ANDROIDLITE_RC = 385,\n    ANDROIDLITE_BETA = 386,\n    ANDROIDLITE_ALPHA = 387,\n    WIN10 = 400,\n    WIN10_RC = 401,\n    WIN10_BETA = 402,\n    WIN10_ALPHA = 403,\n    BIZWEB = 416,\n    BIZWEB_RC = 417,\n    BIZWEB_BETA = 418,\n    BIZWEB_ALPHA = 419,\n    DUMMYPRIMARY = 432,\n    DUMMYPRIMARY_RC = 433,\n    DUMMYPRIMARY_BETA = 434,\n    DUMMYPRIMARY_ALPHA = 435,\n    SQUARE = 448,\n    SQUARE_RC = 449,\n    SQUARE_BETA = 450,\n    SQUARE_ALPHA = 451,\n    INTERNAL = 464,\n    INTERNAL_RC = 465,\n    INTERNAL_BETA = 466,\n    INTERNAL_ALPHA = 467,\n    CLOVAFRIENDS = 480,\n    CLOVAFRIENDS_RC = 481,\n    CLOVAFRIENDS_BETA = 482,\n    CLOVAFRIENDS_ALPHA = 483,\n    WATCHOS = 496,\n    WATCHOS_RC = 497,\n    WATCHOS_BETA = 498,\n    WATCHOS_ALPHA = 499,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "applicationVersion",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "userSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i64",
+                "name": "actionId",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "screen",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i64",
+                "name": "bannerStartedAt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i64",
+                "name": "bannerShownFor",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyBannerShowing_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "TalkException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyBannerShowing_result",
+        "timport": [
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "hwid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "secureMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "applicationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.p.a.a.a.a.a.class {\n    IOS = 16,\n    IOS_RC = 17,\n    IOS_BETA = 18,\n    IOS_ALPHA = 19,\n    ANDROID = 32,\n    ANDROID_RC = 33,\n    ANDROID_BETA = 34,\n    ANDROID_ALPHA = 35,\n    WAP = 48,\n    WAP_RC = 49,\n    WAP_BETA = 50,\n    WAP_ALPHA = 51,\n    BOT = 64,\n    BOT_RC = 65,\n    BOT_BETA = 66,\n    BOT_ALPHA = 67,\n    WEB = 80,\n    WEB_RC = 81,\n    WEB_BETA = 82,\n    WEB_ALPHA = 83,\n    DESKTOPWIN = 96,\n    DESKTOPWIN_RC = 97,\n    DESKTOPWIN_BETA = 98,\n    DESKTOPWIN_ALPHA = 99,\n    DESKTOPMAC = 112,\n    DESKTOPMAC_RC = 113,\n    DESKTOPMAC_BETA = 114,\n    DESKTOPMAC_ALPHA = 115,\n    CHANNELGW = 128,\n    CHANNELGW_RC = 129,\n    CHANNELGW_BETA = 130,\n    CHANNELGW_ALPHA = 131,\n    CHANNELCP = 144,\n    CHANNELCP_RC = 145,\n    CHANNELCP_BETA = 146,\n    CHANNELCP_ALPHA = 147,\n    WINPHONE = 160,\n    WINPHONE_RC = 161,\n    WINPHONE_BETA = 162,\n    WINPHONE_ALPHA = 163,\n    BLACKBERRY = 176,\n    BLACKBERRY_RC = 177,\n    BLACKBERRY_BETA = 178,\n    BLACKBERRY_ALPHA = 179,\n    WINMETRO = 192,\n    WINMETRO_RC = 193,\n    WINMETRO_BETA = 194,\n    WINMETRO_ALPHA = 195,\n    S40 = 208,\n    S40_RC = 209,\n    S40_BETA = 210,\n    S40_ALPHA = 211,\n    CHRONO = 224,\n    CHRONO_RC = 225,\n    CHRONO_BETA = 226,\n    CHRONO_ALPHA = 227,\n    TIZEN = 256,\n    TIZEN_RC = 257,\n    TIZEN_BETA = 258,\n    TIZEN_ALPHA = 259,\n    VIRTUAL = 272,\n    FIREFOXOS = 288,\n    FIREFOXOS_RC = 289,\n    FIREFOXOS_BETA = 290,\n    FIREFOXOS_ALPHA = 291,\n    IOSIPAD = 304,\n    IOSIPAD_RC = 305,\n    IOSIPAD_BETA = 306,\n    IOSIPAD_ALPHA = 307,\n    BIZIOS = 320,\n    BIZIOS_RC = 321,\n    BIZIOS_BETA = 322,\n    BIZIOS_ALPHA = 323,\n    BIZANDROID = 336,\n    BIZANDROID_RC = 337,\n    BIZANDROID_BETA = 338,\n    BIZANDROID_ALPHA = 339,\n    BIZBOT = 352,\n    BIZBOT_RC = 353,\n    BIZBOT_BETA = 354,\n    BIZBOT_ALPHA = 355,\n    CHROMEOS = 368,\n    CHROMEOS_RC = 369,\n    CHROMEOS_BETA = 370,\n    CHROMEOS_ALPHA = 371,\n    ANDROIDLITE = 384,\n    ANDROIDLITE_RC = 385,\n    ANDROIDLITE_BETA = 386,\n    ANDROIDLITE_ALPHA = 387,\n    WIN10 = 400,\n    WIN10_RC = 401,\n    WIN10_BETA = 402,\n    WIN10_ALPHA = 403,\n    BIZWEB = 416,\n    BIZWEB_RC = 417,\n    BIZWEB_BETA = 418,\n    BIZWEB_ALPHA = 419,\n    DUMMYPRIMARY = 432,\n    DUMMYPRIMARY_RC = 433,\n    DUMMYPRIMARY_BETA = 434,\n    DUMMYPRIMARY_ALPHA = 435,\n    SQUARE = 448,\n    SQUARE_RC = 449,\n    SQUARE_BETA = 450,\n    SQUARE_ALPHA = 451,\n    INTERNAL = 464,\n    INTERNAL_RC = 465,\n    INTERNAL_BETA = 466,\n    INTERNAL_ALPHA = 467,\n    CLOVAFRIENDS = 480,\n    CLOVAFRIENDS_RC = 481,\n    CLOVAFRIENDS_BETA = 482,\n    CLOVAFRIENDS_ALPHA = 483,\n    WATCHOS = 496,\n    WATCHOS_RC = 497,\n    WATCHOS_BETA = 498,\n    WATCHOS_ALPHA = 499,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "applicationVersion",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "userSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i64",
+                "name": "actionId",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "screen",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i64",
+                "name": "bannerTappedAt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "bool",
+                "name": "beaconTermAgreed",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyBannerTapped_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "TalkException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyBannerTapped_result",
+        "timport": [
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "hwid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "secureMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "applicationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.p.a.a.a.a.a.class {\n    IOS = 16,\n    IOS_RC = 17,\n    IOS_BETA = 18,\n    IOS_ALPHA = 19,\n    ANDROID = 32,\n    ANDROID_RC = 33,\n    ANDROID_BETA = 34,\n    ANDROID_ALPHA = 35,\n    WAP = 48,\n    WAP_RC = 49,\n    WAP_BETA = 50,\n    WAP_ALPHA = 51,\n    BOT = 64,\n    BOT_RC = 65,\n    BOT_BETA = 66,\n    BOT_ALPHA = 67,\n    WEB = 80,\n    WEB_RC = 81,\n    WEB_BETA = 82,\n    WEB_ALPHA = 83,\n    DESKTOPWIN = 96,\n    DESKTOPWIN_RC = 97,\n    DESKTOPWIN_BETA = 98,\n    DESKTOPWIN_ALPHA = 99,\n    DESKTOPMAC = 112,\n    DESKTOPMAC_RC = 113,\n    DESKTOPMAC_BETA = 114,\n    DESKTOPMAC_ALPHA = 115,\n    CHANNELGW = 128,\n    CHANNELGW_RC = 129,\n    CHANNELGW_BETA = 130,\n    CHANNELGW_ALPHA = 131,\n    CHANNELCP = 144,\n    CHANNELCP_RC = 145,\n    CHANNELCP_BETA = 146,\n    CHANNELCP_ALPHA = 147,\n    WINPHONE = 160,\n    WINPHONE_RC = 161,\n    WINPHONE_BETA = 162,\n    WINPHONE_ALPHA = 163,\n    BLACKBERRY = 176,\n    BLACKBERRY_RC = 177,\n    BLACKBERRY_BETA = 178,\n    BLACKBERRY_ALPHA = 179,\n    WINMETRO = 192,\n    WINMETRO_RC = 193,\n    WINMETRO_BETA = 194,\n    WINMETRO_ALPHA = 195,\n    S40 = 208,\n    S40_RC = 209,\n    S40_BETA = 210,\n    S40_ALPHA = 211,\n    CHRONO = 224,\n    CHRONO_RC = 225,\n    CHRONO_BETA = 226,\n    CHRONO_ALPHA = 227,\n    TIZEN = 256,\n    TIZEN_RC = 257,\n    TIZEN_BETA = 258,\n    TIZEN_ALPHA = 259,\n    VIRTUAL = 272,\n    FIREFOXOS = 288,\n    FIREFOXOS_RC = 289,\n    FIREFOXOS_BETA = 290,\n    FIREFOXOS_ALPHA = 291,\n    IOSIPAD = 304,\n    IOSIPAD_RC = 305,\n    IOSIPAD_BETA = 306,\n    IOSIPAD_ALPHA = 307,\n    BIZIOS = 320,\n    BIZIOS_RC = 321,\n    BIZIOS_BETA = 322,\n    BIZIOS_ALPHA = 323,\n    BIZANDROID = 336,\n    BIZANDROID_RC = 337,\n    BIZANDROID_BETA = 338,\n    BIZANDROID_ALPHA = 339,\n    BIZBOT = 352,\n    BIZBOT_RC = 353,\n    BIZBOT_BETA = 354,\n    BIZBOT_ALPHA = 355,\n    CHROMEOS = 368,\n    CHROMEOS_RC = 369,\n    CHROMEOS_BETA = 370,\n    CHROMEOS_ALPHA = 371,\n    ANDROIDLITE = 384,\n    ANDROIDLITE_RC = 385,\n    ANDROIDLITE_BETA = 386,\n    ANDROIDLITE_ALPHA = 387,\n    WIN10 = 400,\n    WIN10_RC = 401,\n    WIN10_BETA = 402,\n    WIN10_ALPHA = 403,\n    BIZWEB = 416,\n    BIZWEB_RC = 417,\n    BIZWEB_BETA = 418,\n    BIZWEB_ALPHA = 419,\n    DUMMYPRIMARY = 432,\n    DUMMYPRIMARY_RC = 433,\n    DUMMYPRIMARY_BETA = 434,\n    DUMMYPRIMARY_ALPHA = 435,\n    SQUARE = 448,\n    SQUARE_RC = 449,\n    SQUARE_BETA = 450,\n    SQUARE_ALPHA = 451,\n    INTERNAL = 464,\n    INTERNAL_RC = 465,\n    INTERNAL_BETA = 466,\n    INTERNAL_ALPHA = 467,\n    CLOVAFRIENDS = 480,\n    CLOVAFRIENDS_RC = 481,\n    CLOVAFRIENDS_BETA = 482,\n    CLOVAFRIENDS_ALPHA = 483,\n    WATCHOS = 496,\n    WATCHOS_RC = 497,\n    WATCHOS_BETA = 498,\n    WATCHOS_ALPHA = 499,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "applicationVersion",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "lang",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "region",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "modelName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "queryBeaconActions_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "BeaconQueryResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "TalkException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "queryBeaconActions_result",
+        "timport": [
+            "g.a.b.p.a.a.a.a",
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "hwid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "secureMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "notificationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.p.a.a.a.a.e.class {\n    BUTTON = 1,\n    ENTRY_SELECTED = 2,\n    BROADCAST_ENTER = 3,\n    BROADCAST_STAY = 5,\n    BROADCAST_LEAVE = 4,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "Rssi",
+                "name": "rssi",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyBeaconDetected_args",
+        "timport": [
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "TalkException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyBeaconDetected_result",
+        "timport": [
+            "g.a.b.p.a.a.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "actions",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "BeaconTouchActions",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "value",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "Rssi",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.p.a.a.a.a.t.class {\n    ILLEGAL_ARGUMENT = 0,\n    NOT_FOUND = 5,\n    INTERNAL_ERROR = 20,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "parameterMap",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "TalkException",
+        "timport": null
+    }
+]

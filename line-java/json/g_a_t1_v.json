@@ -1,0 +1,1269 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "osPayment",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "iconPosition",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "iconUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "iconText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "iconAltText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "linkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "tsTargetId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "BalanceShortcut",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "Module",
+                "name": "moduleInstance",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ModuleResponse",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetSmartChannelRecommendationsResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "WalletException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSmartChannelRecommendations_result",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cBalanceShortcut\u003e",
+                "name": "balanceShortcuts",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "BalanceShortcut",
+                "name": "osPaymentFallbackShortcut",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "BalanceShortcutInfo",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "rankType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.t1.v.d0.class {\n    REGULAR = 0,\n    SILVER = 1,\n    GOLD = 2,\n    PLATINUM = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "rankName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "iconUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "linkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "MyRankBenefit",
+                "name": "myRankBenefit",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "MyRank",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "code",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "symbol",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "position",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.t1.v.d.class {\n    PREFIX = 0,\n    SUFFIX = 1,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "scale",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "CurrencyProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "rewardCouponCount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "rewardCouponCountLinkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "payReturnPointRate",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "payReturnPointRateLinkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "MyRankBenefit",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "GetBalanceSummaryRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "NotFound",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "GetBalanceSummaryRequestV2",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "NotModified",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "LinePayInfo",
+                "name": "payInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "LinePointInfo",
+                "name": "pointInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "LineCoinInfo",
+                "name": "coinInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetBalanceSummaryResponse",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "minDisplayDuration",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "descriptionText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "labelText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "imageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "bgColorCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "linkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "impEventUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "clickEventUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "muteEventUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "upvoteEventUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "downvoteEventUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SmartChannelRecommendation",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "LinePayInfo",
+                "name": "payInfo",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cLinePayPromotion\u003e",
+                "name": "payPromotions",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "MyRank",
+                "name": "myRank",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "LinePointInfo",
+                "name": "pointInfo",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "BalanceShortcutInfo",
+                "name": "balanceShortcutInfo",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetBalanceSummaryResponseV2",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v",
+            "g.a.t1.v",
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "etag",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "recommendedModelId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetModuleRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.t1.v.h0.class {\n    AUTHENTICATION_FAILED = 401,\n    INTERNAL_SERVER_ERROR = 500,\n    SERVICE_IN_MAINTENANCE_MODE = 503,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "attributes",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "WalletException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ModuleResponse",
+                "name": "moduleResponse",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "NotModified",
+                "name": "notModified",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "NotFound",
+                "name": "notFound",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetModuleResponse",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "etag",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetModulesRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "etag",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetModulesRequestV2",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ModuleAggregationResponse",
+                "name": "moduleAggregationResponse",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "NotModified",
+                "name": "notModified",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetModulesResponse",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ModuleAggregationResponseV2",
+                "name": "moduleAggregationResponse",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "NotModified",
+                "name": "notModified",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetModulesResponseV2",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetBalanceSummaryRequestV2",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBalanceSummaryV2_args",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "maxResults",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "placement",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "testMode",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSmartChannelRecommendationsRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetBalanceSummaryResponseV2",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "WalletException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBalanceSummaryV2_result",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cSmartChannelRecommendation\u003e",
+                "name": "smartChannelRecommendations",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "minInterval",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "requestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSmartChannelRecommendationsResponse",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetBalanceSummaryRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBalanceSummary_args",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "token",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "tokenIssuedTimestamp",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "IpassTokenProperty",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetBalanceSummaryResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "WalletException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBalanceSummary_result",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "balanceAmount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "historyUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "LineCoinInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetModuleRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getModule_args",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "balanceAmount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "CurrencyProperty",
+                "name": "currencyProperty",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "payMemberStatus",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.t1.v.u.class {\n    ALIVE = 1,\n    SUSPENDED = 2,\n    UNREGISTERED = 3,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "applicationUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "chargeUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "payMemberGrade",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.t1.v.t.class {\n    LV1 = 0,\n    LV2 = 1,\n    LV3 = 2,\n    LV9 = 3,\n}"
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "country",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "referenceNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "IpassTokenProperty",
+                "name": "ipassTokenProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "LinePayInfo",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetModuleResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "WalletException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getModule_result",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetModulesRequestV2",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getModulesV2_args",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetModulesResponseV2",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "WalletException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getModulesV2_result",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "mainText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "subText",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "buttonText",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "iconUrl",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "linkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "tsTargetId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "LinePayPromotion",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetModulesRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getModules_args",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "balanceAmount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "applicationUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "LinePointInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetModulesResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "WalletException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getModules_result",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "templateName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "fields",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cmap\u003cstring,string\u003e\u003e",
+                "name": "elements",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "etag",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "refreshTimeSec",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "bool",
+                "name": "recommendable",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "recommendedModelId",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "Module",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cModule\u003e",
+                "name": "modules",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "etag",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "refreshTimeSec",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "ModuleAggregationResponse",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cModule\u003e",
+                "name": "fixedModules",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "etag",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "refreshTimeSec",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cModule\u003e",
+                "name": "recommendedModules",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "ModuleAggregationResponseV2",
+        "timport": [
+            "g.a.t1.v",
+            "g.a.t1.v"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetSmartChannelRecommendationsRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSmartChannelRecommendations_args",
+        "timport": [
+            "g.a.t1.v"
+        ]
+    }
+]

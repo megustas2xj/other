@@ -1,0 +1,84 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "BulkGetRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "bulkGetSetting_args",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "BulkGetResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SettingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "bulkGetSetting_result",
+        "timport": [
+            "g.a.b.e0.a.f.s",
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "BulkSetRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "bulkSetSetting_args",
+        "timport": [
+            "g.a.b.e0.a.f.s"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "BulkSetResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SettingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "bulkSetSetting_result",
+        "timport": [
+            "g.a.b.e0.a.f.s",
+            "g.a.b.e0.a.f.s"
+        ]
+    }
+]

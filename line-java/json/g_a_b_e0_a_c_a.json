@@ -1,0 +1,297 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "CancelPinCodeRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "CancelPinCodeResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetLoginActorContextRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "appType",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accessLocation",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetLoginActorContextResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.c.a.c.class {\n    INTERNAL_ERROR = 0,\n    ILLEGAL_ARGUMENT = 1,\n    VERIFICATION_FAILED = 2,\n    NOT_ALLOWED_QR_CODE_LOGIN = 3,\n    VERIFICATION_NOTICE_FAILED = 4,\n    RETRY_LATER = 5,\n    INVALID_CONTEXT = 100,\n    APP_UPGRADE_REQUIRED = 101,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "alertMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "SecondaryQrCodeException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "CancelPinCodeRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "cancelPinCode_args",
+        "timport": [
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "CancelPinCodeResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SecondaryQrCodeException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "cancelPinCode_result",
+        "timport": [
+            "g.a.b.e0.a.c.a",
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetLoginActorContextRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getLoginActorContext_args",
+        "timport": [
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetLoginActorContextResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SecondaryQrCodeException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getLoginActorContext_result",
+        "timport": [
+            "g.a.b.e0.a.c.a",
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "VerifyPinCodeRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyPinCode_args",
+        "timport": [
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "VerifyPinCodeResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SecondaryQrCodeException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyPinCode_result",
+        "timport": [
+            "g.a.b.e0.a.c.a",
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "VerifyQrCodeRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyQrCode_args",
+        "timport": [
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "VerifyQrCodeResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "SecondaryQrCodeException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyQrCode_result",
+        "timport": [
+            "g.a.b.e0.a.c.a",
+            "g.a.b.e0.a.c.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "pinCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "VerifyPinCodeRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "VerifyPinCodeResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authSessionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "metaData",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "VerifyQrCodeRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "VerifyQrCodeResponse",
+        "timport": null
+    }
+]

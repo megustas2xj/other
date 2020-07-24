@@ -1,0 +1,135 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "botMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSquareBotRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "SquareBot",
+                "name": "squareBot",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetSquareBotResponse",
+        "timport": [
+            "g.a.b.q.a.a.c"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "botMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "active",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "displayName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "profileImageObsHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "iconType",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i64",
+                "name": "lastModifiedAt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i64",
+                "name": "expiredIn",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "SquareBot",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetSquareBotRequest",
+                "name": "req",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSquareBot_args",
+        "timport": [
+            "g.a.b.q.a.a.c"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetSquareBotResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "BotException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSquareBot_result",
+        "timport": [
+            "g.a.b.q.a.a.c",
+            "g.a.b.q.a.a"
+        ]
+    }
+]

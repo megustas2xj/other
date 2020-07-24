@@ -1,0 +1,354 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "18",
+                "meta": "Admission",
+                "name": "admission",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "artistName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "string",
+                "name": "commEventDesc",
+                "requirement": "1",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "i64",
+                "name": "deletableTime",
+                "requirement": "1",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i64",
+                "name": "doorTime",
+                "requirement": "1",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "i64",
+                "name": "enableDoorTime",
+                "requirement": "1",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "enum",
+                "name": "entryCheckMethod",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "19",
+                "meta": "i32",
+                "name": "entryCheckTimeoutSec",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "string",
+                "name": "eventDesc",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "eventImgUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "eventTitle",
+                "requirement": "1",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "eventVenue",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "offlineEnabled",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "reservationNumber",
+                "requirement": "1",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i64",
+                "name": "startDate",
+                "requirement": "1",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i64",
+                "name": "startTime",
+                "requirement": "1",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "list\u003cTicket\u003e",
+                "name": "tickets",
+                "requirement": "1",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "UIInfo",
+                "name": "uiInfo",
+                "requirement": "1",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i64",
+                "name": "validLimitTime",
+                "requirement": "1",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "Reservation",
+        "timport": [
+            "g.a.x0.a.a",
+            "com.linecorp.lt.etkt.api",
+            "com.linecorp.lt.etkt.api"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "displayOrder",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "string",
+                "name": "facePhotoUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "fcId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "ownerName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "priceString",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "qrCodeId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "string",
+                "name": "qrCodeType",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "qrCodeValue",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "seatClass",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "seatInfoPrimary",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "seatInfoSecondary",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "ticketClass",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "ticketDesc",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "ticketId",
+                "requirement": "1",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "UIInfo",
+                "name": "uiInfo",
+                "requirement": "1",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "Ticket",
+        "timport": [
+            "com.linecorp.lt.etkt.api"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "bgColor",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "bgImgUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "extData",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "fgColor",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "fgImgUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "schemeVersion",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "uiFormat",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "UIInfo",
+        "timport": null
+    }
+]

@@ -1,0 +1,205 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "StickerProperty",
+                "name": "stickerProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "SticonProperty",
+                "name": "sticonProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "ThemeProperty",
+                "name": "themeProperty",
+                "requirement": "2",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductProperty",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a",
+            "h0.a.a.c.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "author",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "string",
+                "name": "authorId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "19",
+                "meta": "i32",
+                "name": "availability",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.k1.class {\n    PURCHASE_ONLY = 0,\n    PURCHASE_OR_SUBSCRIPTION = 1,\n    SUBSCRIPTION_ONLY = 2,\n}"
+            },
+            {
+                "index": "13",
+                "meta": "bool",
+                "name": "availableForPresent",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "bool",
+                "name": "availableForPurchase",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "bool",
+                "name": "bargainFlag",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "18",
+                "meta": "string",
+                "name": "copyright",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "20",
+                "meta": "string",
+                "name": "interactionEventParameter",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "bool",
+                "name": "newFlag",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "bool",
+                "name": "onSale",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "priceInLineCoin",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "priceTier",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "PromotionInfo",
+                "name": "promotionInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "ProductProperty",
+                "name": "property",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i32",
+                "name": "subType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.t3.class {\n    GENERAL = 0,\n    CREATORS = 1,\n    STICON = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum h0.a.a.c.a.a.v1.class {\n    STICKER = 1,\n    THEME = 2,\n    STICON = 3,\n}"
+            },
+            {
+                "index": "15",
+                "meta": "i32",
+                "name": "validDays",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i64",
+                "name": "version",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "ProductSearchSummary",
+        "timport": [
+            "h0.a.a.c.a.a",
+            "jp.naver.line.shop.protocol.thrift"
+        ]
+    }
+]

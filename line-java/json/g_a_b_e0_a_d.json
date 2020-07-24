@@ -1,0 +1,5811 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "authPasswordAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentCountrySettingInfoEx",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getCountrySettingV4_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentPointInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPoint_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cPaymentTradeInfo\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "listTradeNumbers_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.bd.class {\n    NONE = 1,\n    MESSAGE = 2,\n    NOTIFICATION = 3,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "createdDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "destination",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.g1.class {\n    NONE = 1,\n    DEPOSIT_BANKS = 2,\n    BALANCE_TRX_LIST = 3,\n    TRANSFER_REQ_LIST = 4,\n    CREDITCARD_PAY_LIST = 5,\n    BALANCE_PAY_LIST = 6,\n    LINECASH_JOIN = 7,\n    IDENTIFICATION_UPLOAD = 8,\n    CUSTOM_CENTER = 9,\n}"
+            }
+        ],
+        "tstruct": "PaymentTransactionHistoryInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "25",
+                "meta": "string",
+                "name": "responseToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "balanceLimit",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "rechargeableAmount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "DisplayMoney",
+                "name": "balanceAmount",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "MoneyRange",
+                "name": "bankChargeRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "MoneyRange",
+                "name": "atmChargeRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "18",
+                "meta": "MoneyRange",
+                "name": "convenienceStoreChargeRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "19",
+                "meta": "MoneyRange",
+                "name": "eachPayRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "20",
+                "meta": "MoneyRange",
+                "name": "eachTransferRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "21",
+                "meta": "MoneyRange",
+                "name": "eachWithdrawRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "22",
+                "meta": "MoneyRange",
+                "name": "balanceNotifySetupRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "23",
+                "meta": "MoneyRange",
+                "name": "eachTransferRequestRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "24",
+                "meta": "MoneyRange",
+                "name": "debitCardChargeRange",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "BalanceInfo",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "urlKey",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "imageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PayWithdrawStaticMenu",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "authRequestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "sessionToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "authPassword_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "deviceIdentifier",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "publicValueX",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "publicValueY",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "bindDevice_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.n.class {\n    CHARGE = 1,\n    WITHDRAW = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "lpAccountNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "channelType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.m0.class {\n    NULL = 0,\n    ATM = 1,\n    CONVENIENCE_STORE = 2,\n}"
+            }
+        ],
+        "tstruct": "checkOperationTimeEx_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "getRequiredAgreements_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "friendMids",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "messageMetadata",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "imageObsPath",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "inviteFriends_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "issueTrackingTicket_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "startNum",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "count",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "listTransactionHistory_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "sessionToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "resumeSuspendedUser_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "friends",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.f1.class {\n    TRANSFER = 1,\n    TRANSFER_REQUEST = 2,\n    DUTCH = 3,\n    INVITATION = 4,\n}"
+            }
+        ],
+        "tstruct": "validateEligibleFriends_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "state",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "address1",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentAddressSearchResult",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "view",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cPaymentFlowTypeCustomElement\u003e",
+                "name": "elements",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentFlowTypeCustom",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "authPassword_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "bindDevice_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "CheckOperationResult",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "checkOperationTimeEx_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentRequiredAgreementsInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getRequiredAgreements_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "inviteFriends_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueTrackingTicket_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cPaymentTransactionHistoryInfo\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "listTransactionHistory_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "resumeSuspendedUser_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cPaymentEligibleFriendStatus\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "validateEligibleFriends_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "amount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "receivedLineMemberId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentTransferRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "value",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "style",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "regularExpression",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "bool",
+                "name": "visible",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "uri",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentFlowTypeCustomElement",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "balanceAmount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingBalanceEx_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "usePoint",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "enablePointForOneTimeKey_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "getSettingsMenuInfo_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueCreditCardToken_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.d0.class {\n    NONE = 0,\n    UNIQUE = 1,\n    LIST = 2,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "query",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "searchAddress_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "91",
+                "meta": "string",
+                "name": "keyName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "RSAEncryptedLoginInfo",
+                "name": "loginInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "validateIdPasswordAsync_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "branchId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "branchCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "name2",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "BankBranchInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "flowType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.b1.class {\n    GENERAL = 1,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "authType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.f0.class {\n    UNKNOWN = 0,\n    NONE = 1,\n    LP_PINCODE = 2,\n    OTP = 3,\n    IDPW = 4,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "map\u003ci32,list\u003cstring\u003e\u003e",
+                "name": "handleableOps",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.r1.class {\n    SESSION = 1,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cPaymentFlowTypeCustom\u003e",
+                "name": "customs",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentFlowTypeInfo",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentAuthenticationInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingBalanceEx_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "enablePointForOneTimeKey_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentSettingsMenuInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getSettingsMenuInfo_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueCreditCardToken_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cPaymentAddressSearchResult\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "searchAddress_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "validateIdPasswordAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "bankId",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "financialCorpId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "financialCorpCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.d.class {\n    BANK_ALL = 1,\n    BANK_DEPOSIT = 2,\n    BANK_WITHDRAWAL = 3,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "imageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "name2",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "preCreationText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "BankInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "featureType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.a1.class {\n    UNKNOWN = 0,\n    MAIN = 12,\n    DEPOSIT = 1,\n    DEPOSIT_BANK = 10,\n    DEPOSIT_DEBIT = 11,\n    DEPOSIT_ATM = 8,\n    DEPOSIT_CONVENIENCE_STORE = 9,\n    WITHDRAWAL = 2,\n    TRANSFER = 3,\n    PAYMENT = 4,\n    TRANSFER_REQUEST = 5,\n    DUTCH = 6,\n    REMOVAL = 7,\n    IDENTIFICATION = 13,\n    CREDIT_CARD_REGISTRATION = 14,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "onlyPointPayment",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "getFlowType_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "targetStatusFetchId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getStatusInfo_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "issueFinanceRequestToken_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.d.class {\n    BANK_ALL = 1,\n    BANK_DEPOSIT = 2,\n    BANK_WITHDRAWAL = 3,\n}"
+            }
+        ],
+        "tstruct": "listBanks_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "type",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "startDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "endDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "startNum",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "count",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "listTransferRequests_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "enable",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "minBalance",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "setMinimumBalanceNotification_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "paygBody",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "validatePayg_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accountNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "referenceNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "lineMemberId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentTransferTargetInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "confirmMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentAuthenticationInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentFlowTypeInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getFlowType_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PayStatusInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getStatusInfo_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueFinanceRequestToken_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cBankInfo\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "listBanks_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cTransferRequestInfo\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "listTransferRequests_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "setMinimumBalanceNotification_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "validatePayg_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "tradable",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "detailMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "CheckOperationResult",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003ci32\u003e",
+                "name": "methods",
+                "requirement": "3",
+                "type": "15",
+                "note": "enum g.a.b.e0.a.d.e0.class {\n    TTS = 1,\n    BANK_DEPOSIT = 2,\n    CREDIT_CARD = 3,\n    BALANCE = 4,\n    INDIVIDUAL_INFO = 5,\n    REFERENCE_NO = 6,\n    CITIZEN_ID = 7,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentAvailableAuth",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.d.class {\n    BANK_ALL = 1,\n    BANK_DEPOSIT = 2,\n    BANK_WITHDRAWAL = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "bankId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "bankBranchId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "realAccountNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "accountProductCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.c.class {\n    PERSONAL_ACCOUNT = 1,\n    CURRENT_ACCOUNT = 2,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingBankAccountEx_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "chargeRequestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "cancelTradeRequest_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "resolutionType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.n0.class {\n    SCALE2 = 1,\n    SCALE3 = 2,\n    HDPI = 3,\n    XHDPI = 4,\n}"
+            }
+        ],
+        "tstruct": "getLineCardIssueForm_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "buttonId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "checkboxes",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "postPopupButtonEvents_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyPasswordStrengthAsync_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "url",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "mustScroll",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "pageTitle",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "label",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "labelJoin",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "acceptanceRequired",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "labelDesc",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentUrlInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003ci32,i64\u003e",
+                "name": "timestamps",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.rc.class {\n    MENUS = 1,\n    URLS = 2,\n    CARD_VALIDATION_RULES = 3,\n    MESSAGES = 4,\n    MYCODE_SHORTCUT = 5,\n    INVOICE = 6,\n    FEATURES = 7,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "map\u003ci32,list\u003cPaymentCountrySettingMenu\u003e\u003e",
+                "name": "menus",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.o1.class {\n    MAIN = 1,\n    MAIN_PLUS_BUTTON = 2,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "map\u003cstring,PaymentUrlInfo\u003e",
+                "name": "urls",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "map\u003ci32,list\u003cstring\u003e\u003e",
+                "name": "urlGroups",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.gd.class {\n    JOINING_AGREEMENT = 1,\n    PAYMENT = 2,\n    SETTING = 3,\n    ACCOUNT_SETTING = 4,\n    FINANCE_GATEWAY = 5,\n    JOINING_AGREEMENT_V2 = 6,\n    IMAGE = 7,\n    SETTING_MENU = 8,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "map\u003ci32,list\u003cPaymentTosUrlBundle\u003e\u003e",
+                "name": "tosUrlBundles",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.wc.class {\n    NONE = 0,\n    ONE_TIME_PAYMENT_AGREEMENT = 1,\n    SIMPLE_JOINING_AGREEMENT = 2,\n    LINE_CARD_CASH_AGREEMENT = 3,\n    LINE_CARD_MONEY_AGREEMENT = 4,\n    JOINING_WITH_LINE_CARD_AGREEMENT = 5,\n    LINE_CARD_AGREEMENT = 6,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "list\u003cPaymentCardValidationRule\u003e",
+                "name": "cardValidationRules",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "map\u003ci32,map\u003cstring,string\u003e\u003e",
+                "name": "messages",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.m1.class {\n    AUTH_METHODS_SELECTION = 1,\n    PASSWORD_SETTING = 2,\n    LINE_POINT_PAYMENT_INFO = 3,\n    PASSWORD_SETTING_AGAIN = 4,\n    PASSWORD = 5,\n    GENERAL = 6,\n    PASSWORD_TEMPORARY = 7,\n    PASSWORD_MYCODE_AUTH = 8,\n    SIGNUP = 9,\n    CARD_LIST = 10,\n    MYCODE_POINT_INFO = 11,\n    COUPON_GUIDE = 12,\n}"
+            },
+            {
+                "index": "8",
+                "meta": "PaymentMyCode",
+                "name": "myCode",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "PayInvoiceSetting",
+                "name": "invoice",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "map\u003ci32,map\u003cstring,string\u003e\u003e",
+                "name": "features",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.t.class {\n    IPASS = 1,\n}"
+            }
+        ],
+        "tstruct": "PaymentCacheableSettings",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentAuthenticationInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingBankAccountEx_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "cancelTradeRequest_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentLineCardIssueForm",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getLineCardIssueForm_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "postPopupButtonEvents_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyPasswordStrengthAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "carryOverAvailable",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "CreatedPaymentUserInfoEx",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "transactionType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.qd.class {\n    UNKNOWN = 0,\n    PAYMENT = 1,\n    PAYMENT_CANCEL = 2,\n    PARTIAL_CANCEL = 3,\n    TRANSFER = 4,\n    TRANSFER_FAIL = 13,\n    NOT_JOIN_TRANSFER = 11,\n    NOT_JOIN_TRANSFER_COMPLETE = 12,\n    NOT_JOIN_TRANSFER_REFUND = 9,\n    DEPOSIT = 5,\n    DEPOSIT_WAIT = 10,\n    DEPOSIT_CANCEL = 14,\n    WITHDRAW = 6,\n    WITHDRAW_COMPLETE = 7,\n    WITHDRAW_FAIL = 8,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "cancelDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "DisplayMoney",
+                "name": "cancelAmount",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "DisplayMoney",
+                "name": "remainAmount",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentCancellationInfo",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cstring\u003e",
+                "name": "mids",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "cancelTransferRequests_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getLinePayAccount_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "invitationBundleId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "listInvitationInfo_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "designCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "imageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentLineCardInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "cancelTransferRequests_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "LinePayAccountInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getLinePayAccount_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PayInvitationInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "listInvitationInfo_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "userId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.md.class {\n    UNKNOWN = 0,\n    ALIVE = 1,\n    NOT_JOIN = 6,\n    SUSPENDED = 7,\n    REMOVED = 8,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "country",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "grade",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.jd.class {\n    UNSPECIFIED = 0,\n    LV1 = 1,\n    LV2 = 2,\n    LV3 = 3,\n    LV4 = 4,\n    LV9 = 9,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "passwordVersion",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.s1.class {\n    UNKNOWN = 0,\n    VER1 = 1,\n    VER2 = 2,\n    EXTERNAL = 4,\n    NONE = 3,\n}"
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "joined",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentUserInfoDigest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "amount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "amountString",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "currency",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "DisplayMoney",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "regex",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "grouping",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "maxLength",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "cardBrandName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "securityCodeHelp",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "cardBrand",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.k0.class {\n    UNKNOWN = 0,\n    VISA = 1,\n    MASTER = 2,\n    AMEX = 3,\n    DINERS = 4,\n    JCB = 5,\n}"
+            }
+        ],
+        "tstruct": "PaymentCardValidationRule",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "requiredTermsOfServiceBundle",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.wc.class {\n    NONE = 0,\n    ONE_TIME_PAYMENT_AGREEMENT = 1,\n    SIMPLE_JOINING_AGREEMENT = 2,\n    LINE_CARD_CASH_AGREEMENT = 3,\n    LINE_CARD_MONEY_AGREEMENT = 4,\n    JOINING_WITH_LINE_CARD_AGREEMENT = 5,\n    LINE_CARD_AGREEMENT = 6,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "list\u003cPaymentLineCardInfo\u003e",
+                "name": "availableLineCards",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentLineCardIssueForm",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "carryForwardLinePayAccount_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "set\u003cstring\u003e",
+                "name": "agreements",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "joinPath",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.j1.class {\n    UNKNOWN = 0,\n    MORE_TAB = 1,\n    CHAT_ROOM_PLUS_MENU = 2,\n    TRANSFER = 3,\n    PAYMENT = 4,\n    LINECARD = 5,\n    INVITATION = 6,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "transactionReserveId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "deviceIdentifier",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "publicValueX",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "publicValueY",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "PaymentRegionalInfo",
+                "name": "regionalInfo",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "createAccountV4_args",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAccountBalanceAsync_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "issueNonce_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "listJobs_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "issueSeq",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "pinCode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyTTSPinCode_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "jobId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "jobName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentUserJobInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "carryForwardLinePayAccount_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "CreatedPaymentUserInfoEx",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "createAccountV4_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getAccountBalanceAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueNonce_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cPaymentUserJobInfo\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "listJobs_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentTTSPinCodeVerificationInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "verifyTTSPinCode_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "set\u003cstring\u003e",
+                "name": "agreements",
+                "requirement": "3",
+                "type": "14",
+                "note": ""
+            }
+        ],
+        "tstruct": "changeAgreementStatus_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "getBalance_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "transactionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPaymentDetail_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "barcodeRequestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "barcode",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "registerBarcodeAsync_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "loginId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "loginPassword",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "RSAEncryptedLoginInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "accountType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.q.class {\n    UNKNOWN = 0,\n    LP = 1,\n    PAYMETHOD_CREDIT_CARD = 2,\n    PAYMETHOD_BANK_ACCOUNT = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "nickname",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.p.class {\n    NULL = 0,\n    ALIVE = 1,\n    WAIT = 2,\n    REMOVE = 3,\n    IDENTIFICATION_REQUIRED = 4,\n    IDENTIFICATION_WAIT = 5,\n    MAINTENANCE = 6,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "financialCorporationName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "realAccountNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "currency",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "accountProductType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.c.class {\n    PERSONAL_ACCOUNT = 1,\n    CURRENT_ACCOUNT = 2,\n}"
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "branchName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "bool",
+                "name": "withdraw",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "bool",
+                "name": "deposit",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "ownerName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "string",
+                "name": "imageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "bool",
+                "name": "primary",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "string",
+                "name": "accountProductName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "bool",
+                "name": "holderNameRegistered",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "i32",
+                "name": "cardBrand",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.k0.class {\n    UNKNOWN = 0,\n    VISA = 1,\n    MASTER = 2,\n    AMEX = 3,\n    DINERS = 4,\n    JCB = 5,\n}"
+            },
+            {
+                "index": "18",
+                "meta": "string",
+                "name": "debitImageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "19",
+                "meta": "bool",
+                "name": "lineCard",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "20",
+                "meta": "string",
+                "name": "lineCardImageId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "21",
+                "meta": "string",
+                "name": "textColor",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "22",
+                "meta": "string",
+                "name": "placeholderColor",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "23",
+                "meta": "string",
+                "name": "backgroundColor",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "24",
+                "meta": "set\u003ci32\u003e",
+                "name": "extendedFeatures",
+                "requirement": "3",
+                "type": "14",
+                "note": "enum g.a.b.e0.a.d.s.class {\n    BALANCE_INQUIRY = 1,\n}"
+            }
+        ],
+        "tstruct": "LinePayAccountInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "changeAgreementStatus_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "BalanceInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBalance_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentDetailInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPaymentDetail_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "registerBarcodeAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "encrypted",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "keyName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "RSAEncryptedPassword",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "asyncWaitTimeout",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "bool",
+                "name": "creditcardSupport",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "PaymentCybsInfo",
+                "name": "cybs",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "crossBorderTransfer",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "addressSearchType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.d0.class {\n    NONE = 0,\n    UNIQUE = 1,\n    LIST = 2,\n}"
+            },
+            {
+                "index": "8",
+                "meta": "list\u003cPaymentCountrySettingMenu\u003e",
+                "name": "menu",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "list\u003ci32\u003e",
+                "name": "depositMethods",
+                "requirement": "3",
+                "type": "15",
+                "note": "enum g.a.b.e0.a.d.k.class {\n    BANK = 1,\n    ATM = 2,\n    CONVENIENCE_STORE = 3,\n    DEBIT_CARD = 4,\n    E_CHANNEL = 5,\n    VIRTUAL_BANK_ACCOUNT = 6,\n    AUTO = 7,\n    CVS_LAWSON = 8,\n    SEVEN_BANK_DEPOSIT = 9,\n    CODE_DEPOSIT = 10,\n}"
+            },
+            {
+                "index": "10",
+                "meta": "map\u003cstring,PaymentUrlInfo\u003e",
+                "name": "urls",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "map\u003ci32,list\u003cstring\u003e\u003e",
+                "name": "urlGroups",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.gd.class {\n    JOINING_AGREEMENT = 1,\n    PAYMENT = 2,\n    SETTING = 3,\n    ACCOUNT_SETTING = 4,\n    FINANCE_GATEWAY = 5,\n    JOINING_AGREEMENT_V2 = 6,\n    IMAGE = 7,\n    SETTING_MENU = 8,\n}"
+            },
+            {
+                "index": "12",
+                "meta": "bool",
+                "name": "paygEnabled",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "PaymentCountrySettingLimitInfo",
+                "name": "limit",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "bool",
+                "name": "emailRequired",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "map\u003ci32,list\u003cPaymentTosUrlBundle\u003e\u003e",
+                "name": "tosUrlBundles",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.wc.class {\n    NONE = 0,\n    ONE_TIME_PAYMENT_AGREEMENT = 1,\n    SIMPLE_JOINING_AGREEMENT = 2,\n    LINE_CARD_CASH_AGREEMENT = 3,\n    LINE_CARD_MONEY_AGREEMENT = 4,\n    JOINING_WITH_LINE_CARD_AGREEMENT = 5,\n    LINE_CARD_AGREEMENT = 6,\n}"
+            },
+            {
+                "index": "16",
+                "meta": "i32",
+                "name": "registrationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.v1.class {\n    NONE = 0,\n    NORMAL = 1,\n    LINECARD = 2,\n    LINECARD_OPTIONAL = 3,\n    WEB = 4,\n    IPASS = 5,\n}"
+            },
+            {
+                "index": "17",
+                "meta": "bool",
+                "name": "pointSupport",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "18",
+                "meta": "string",
+                "name": "registrationUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "19",
+                "meta": "string",
+                "name": "introUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "20",
+                "meta": "bool",
+                "name": "touchIdMenuAvailable",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "21",
+                "meta": "bool",
+                "name": "myCodePasswordRequired",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "22",
+                "meta": "map\u003ci32,list\u003cPayWithdrawStaticMenu\u003e\u003e",
+                "name": "settingWithdrawStaticMenu",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.jd.class {\n    UNSPECIFIED = 0,\n    LV1 = 1,\n    LV2 = 2,\n    LV3 = 3,\n    LV4 = 4,\n    LV9 = 9,\n}"
+            },
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "balanceSupport",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "balanceType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.o0.class {\n    NONE = 1,\n    JP = 2,\n    TW = 3,\n    TH = 4,\n    ID = 5,\n}"
+            }
+        ],
+        "tstruct": "PaymentCountrySettingInfoEx",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "citizenId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "laserNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "firstName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "lastName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "birthday",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.i.class {\n    PASSWORD = 1,\n    JOIN = 2,\n}"
+            }
+        ],
+        "tstruct": "authenticateUsingCitizenIdAsync_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "RSAEncryptedPassword",
+                "name": "currentPassword",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "RSAEncryptedPassword",
+                "name": "newPassword",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "changePasswordAsync_args",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "financialCorpId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "query",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "startNum",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "count",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBankBranches_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "startNum",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "count",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "getTransferRequestInfo_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "removeLinePayAccount_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "firstName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "lastName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "identificationNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "identificationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.i1.class {\n    CITIZEN_ID = 1,\n    PASSPORT = 2,\n    WORK_PERMIT = 3,\n    ALIEN_CARD = 4,\n}"
+            }
+        ],
+        "tstruct": "ThRegionalInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "depositBank",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "withdrawalBank",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "possessionOfCards",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentCountrySettingLimitInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "shortcutUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "shortcutIconUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "shortcutIconText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "shortcutSchemeUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentMyCode",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingCitizenIdAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "changePasswordAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cBankBranchInfo\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBankBranches_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "TransferRequestInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getTransferRequestInfo_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "removeLinePayAccount_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "min",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "max",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "MoneyRange",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "i32",
+                "name": "linkType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.t0.class {\n    BUILTIN = 1,\n    CHANNEL = 2,\n    APP = 3,\n    WEB = 4,\n}"
+            },
+            {
+                "index": "8",
+                "meta": "i32",
+                "name": "badgeType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.s0.class {\n    NONE = 1,\n    NEW = 2,\n    HOT = 3,\n    EVENT = 4,\n}"
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "androidImageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "iosImageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "androidLinkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "androidPackageName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "string",
+                "name": "iosLinkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "string",
+                "name": "androidStoreUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "string",
+                "name": "iosStoreUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "i64",
+                "name": "sequence",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "18",
+                "meta": "i32",
+                "name": "displayType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.n1.class {\n    UNKNOWN = 0,\n    HORIZONTAL = 1,\n    SQUARE = 2,\n}"
+            },
+            {
+                "index": "16",
+                "meta": "i64",
+                "name": "id",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.u0.class {\n    DEPOSIT = 1,\n    TRANSFER = 2,\n    TRANSFER_REQUEST = 3,\n    DUTCH = 4,\n    BALANCE_TRX_LIST = 5,\n    CREDITCARD_PAY_LIST = 6,\n    CREDITCARD_REG = 7,\n    SETTINGS = 8,\n    CUSTOM = 100,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "order",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "imgUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "touchImgUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "linkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentCountrySettingMenu",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "sendMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "currency",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cPaymentTransferRequest\u003e",
+                "name": "requests",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "messageMetadata",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "targetChatId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "imageObsPath",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "createDutchTransferRequestAsync_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "resolutionType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.n0.class {\n    SCALE2 = 1,\n    SCALE3 = 2,\n    HDPI = 3,\n    XHDPI = 4,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "map\u003ci32,i64\u003e",
+                "name": "timestamps",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.rc.class {\n    MENUS = 1,\n    URLS = 2,\n    CARD_VALIDATION_RULES = 3,\n    MESSAGES = 4,\n    MYCODE_SHORTCUT = 5,\n    INVOICE = 6,\n    FEATURES = 7,\n}"
+            }
+        ],
+        "tstruct": "getCacheableSettings_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "toMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "searchType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.a0.class {\n    MID = 1,\n    REF_NO = 2,\n    SVC_NO = 3,\n}"
+            }
+        ],
+        "tstruct": "getTransferTargetInfo_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "featureType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.a1.class {\n    UNKNOWN = 0,\n    MAIN = 12,\n    DEPOSIT = 1,\n    DEPOSIT_BANK = 10,\n    DEPOSIT_DEBIT = 11,\n    DEPOSIT_ATM = 8,\n    DEPOSIT_CONVENIENCE_STORE = 9,\n    WITHDRAWAL = 2,\n    TRANSFER = 3,\n    PAYMENT = 4,\n    TRANSFER_REQUEST = 5,\n    DUTCH = 6,\n    REMOVAL = 7,\n    IDENTIFICATION = 13,\n    CREDIT_CARD_REGISTRATION = 14,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "toMid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "amount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "isManual",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueOtpAsync_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.d.class {\n    BANK_ALL = 1,\n    BANK_DEPOSIT = 2,\n    BANK_WITHDRAWAL = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "transactionReserveId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "listLinePayBankAccounts_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "balanceDisclaimerAgreement",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "removeUser_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "11",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.dd.class {\n    READY = 1,\n    COMPLETE = 2,\n    REQUEST = 3,\n    CANCEL = 4,\n    FAIL = 5,\n}"
+            },
+            {
+                "index": "13",
+                "meta": "list\u003cTransferRequestReceivedInfo\u003e",
+                "name": "requestReceivedInfo",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "messageMetadata",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "DisplayMoney",
+                "name": "moneyAmount",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "i32",
+                "name": "totalMemberCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "i32",
+                "name": "startNum",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "18",
+                "meta": "string",
+                "name": "messageId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "19",
+                "meta": "i32",
+                "name": "otherMemberCount",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "requestType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.ed.class {\n    DUTCH_FROM = 1,\n    FROM = 2,\n    DUTCH_TO = 3,\n    TO = 4,\n    MULTI_TO = 5,\n    MULTI_FROM = 6,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "requestLineMemberId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "requestLineUserNickname",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "receiveLineMemberId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "receiveLineUserNickname",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "sendMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "i64",
+                "name": "requestDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "TransferRequestInfo",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "createDutchTransferRequestAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentCacheableSettings",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getCacheableSettings_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentTransferTargetInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getTransferTargetInfo_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueOtpAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cLinePayAccountInfo\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "listLinePayBankAccounts_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "removeUser_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "certificationStatus",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "memberGradeType",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "bool",
+                "name": "recieveMoneyEnabled",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cPaymentSettingsMenuInfoAccount\u003e",
+                "name": "accounts",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "bankAccountSettingUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "lineCardUser",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentSettingsMenuInfo",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "requestType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.ed.class {\n    DUTCH_FROM = 1,\n    FROM = 2,\n    DUTCH_TO = 3,\n    TO = 4,\n    MULTI_TO = 5,\n    MULTI_FROM = 6,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "receiveLineMemberId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "receiveLineUserNickname",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "sendMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i64",
+                "name": "requestDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.dd.class {\n    READY = 1,\n    COMPLETE = 2,\n    REQUEST = 3,\n    CANCEL = 4,\n    FAIL = 5,\n}"
+            },
+            {
+                "index": "10",
+                "meta": "DisplayMoney",
+                "name": "moneyAmount",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "TransferRequestReceivedInfo",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "DisplayMoney",
+                "name": "point",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "needInquiry",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentPointInfo",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "firstName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "lastName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "phoneticFirstName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "phoneticLastName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "birthday",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingNameAndBirthdayEx_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "authType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.f0.class {\n    UNKNOWN = 0,\n    NONE = 1,\n    LP_PINCODE = 2,\n    OTP = 3,\n    IDPW = 4,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "featureType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.a1.class {\n    UNKNOWN = 0,\n    MAIN = 12,\n    DEPOSIT = 1,\n    DEPOSIT_BANK = 10,\n    DEPOSIT_DEBIT = 11,\n    DEPOSIT_ATM = 8,\n    DEPOSIT_CONVENIENCE_STORE = 9,\n    WITHDRAWAL = 2,\n    TRANSFER = 3,\n    PAYMENT = 4,\n    TRANSFER_REQUEST = 5,\n    DUTCH = 6,\n    REMOVAL = 7,\n    IDENTIFICATION = 13,\n    CREDIT_CARD_REGISTRATION = 14,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "accountId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "checkAuthType_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "createIpassAccount_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "getUserInfoDigest_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "frontPhotoOBSHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "backPhotoOBSHash",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "trackingId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "requestIdentification_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "financialCorporationName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "accountNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "imageUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentSettingsMenuInfoAccount",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "result",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.ud.class {\n    OK = 1,\n    NOT_ALIVE_USER = 2,\n    NEED_BALANCE_DISCLAIMER = 3,\n    ECONTEXT_CHARGING_IN_PROGRESS = 4,\n    TRANSFER_IN_PROGRESS = 6,\n    OK_REMAINING_BALANCE = 7,\n    ADVERSE_BALANCE = 8,\n    CONFIRM_REQUIRED = 9,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "UnregisterAvailabilityInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "invitationId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "invitationType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.v.class {\n    FRIEND_FROM = 1,\n    FRIEND_TO = 2,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "createDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003cPayInvitationUserInfo\u003e",
+                "name": "receivedInfo",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "PayInvitationInfo",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ThRegionalInfo",
+                "name": "th",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentRegionalInfo",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentAuthenticationInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingNameAndBirthdayEx_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "checkAuthType_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "createIpassAccount_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentUserInfoDigest",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getUserInfoDigest_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "requestIdentification_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "authPasswordRequired",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "message",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentTTSPinCodeVerificationInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "merchantId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "orgId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "serverUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentCybsInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.a.class {\n    PASSWORD = 1,\n    CARRY_FORWARD = 2,\n}"
+            }
+        ],
+        "tstruct": "checkAvailableAuthMethods_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "issueRequestToken_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "bool",
+                "name": "entry",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "updatePasswordLock_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "urls",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "prefixText",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentTosUrlBundle",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "lineMemberId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PayInvitationUserInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "merchantTelNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "string",
+                "name": "merchantRepresentative",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "list\u003cPaymentCancellationInfo\u003e",
+                "name": "cancelList",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "DisplayMoney",
+                "name": "moneyAmount",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "14",
+                "meta": "string",
+                "name": "accountNickname",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "string",
+                "name": "merchantEmail",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "16",
+                "meta": "i64",
+                "name": "confirmDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "17",
+                "meta": "string",
+                "name": "merchantLabel",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "transactionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "transactionDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i32",
+                "name": "transactionType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.qd.class {\n    UNKNOWN = 0,\n    PAYMENT = 1,\n    PAYMENT_CANCEL = 2,\n    PARTIAL_CANCEL = 3,\n    TRANSFER = 4,\n    TRANSFER_FAIL = 13,\n    NOT_JOIN_TRANSFER = 11,\n    NOT_JOIN_TRANSFER_COMPLETE = 12,\n    NOT_JOIN_TRANSFER_REFUND = 9,\n    DEPOSIT = 5,\n    DEPOSIT_WAIT = 10,\n    DEPOSIT_CANCEL = 14,\n    WITHDRAW = 6,\n    WITHDRAW_COMPLETE = 7,\n    WITHDRAW_FAIL = 8,\n}"
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "productName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "paymethod",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.p1.class {\n    NULL = 0,\n    BALANCE = 1,\n    CREDIT_CARD = 2,\n    POINT = 3,\n    DEBIT_PAYMENT = 4,\n}"
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "cardCorporation",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "maskedCardNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "merchantName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentDetailInfo",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "title",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "desc",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "linkName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "linkUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "list\u003cstring\u003e",
+                "name": "newAgreements",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentRequiredAgreementsInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentAvailableAuth",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "checkAvailableAuthMethods_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueRequestToken_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "updatePasswordLock_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "regexp",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "maxLength",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            }
+        ],
+        "tstruct": "PayInvoiceSetting",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "mid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.m.class {\n    AVAILABLE = 0,\n    DIFFERENT_REGION = 1,\n    UNSUPPORTED_DEVICE = 2,\n    PHONE_NUMBER_UNREGISTERED = 3,\n    UNAVAILABLE_FROM_LINE_PAY = 4,\n    INVALID_USER = 5,\n}"
+            }
+        ],
+        "tstruct": "PaymentEligibleFriendStatus",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "referenceNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingReferenceNoEx_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.vd.class {\n    LINE = 1,\n    LINEPAY = 2,\n}"
+            }
+        ],
+        "tstruct": "checkCanUnregisterEx_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "sendMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "currency",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "list\u003cPaymentTransferRequest\u003e",
+                "name": "requests",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "messageMetadata",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "targetChatId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "imageObsPath",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "createTransferRequestAsync_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "key",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPaymentUrlByKey_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "authToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueTTSPinCodeV2_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "requestType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.yc.class {\n    NULL = 0,\n    ATM = 1,\n    CONVENIENCE_STORE = 2,\n    ALL = 3,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "amount",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "requestTradeNumber_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003ci32,string\u003e",
+                "name": "settings",
+                "requirement": "3",
+                "type": "13",
+                "note": "enum g.a.b.e0.a.d.id.class {\n    TRANSFER_ACCEPTABLE = 1,\n    REMOVE_INVOICE = 2,\n    INVOICE_CODE = 3,\n    SHOW_ALWAYS_INVOICE = 4,\n}"
+            }
+        ],
+        "tstruct": "updateUserGeneralSettings_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "14",
+                "meta": "string",
+                "name": "helpUrl",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "15",
+                "meta": "string",
+                "name": "guideMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "chargeRequestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "i32",
+                "name": "chargeRequestType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.yc.class {\n    NULL = 0,\n    ATM = 1,\n    CONVENIENCE_STORE = 2,\n    ALL = 3,\n}"
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "chargeRequestYmdt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "tradeNumber",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "agencyNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "confirmNo",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "i64",
+                "name": "expireYmd",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "DisplayMoney",
+                "name": "moneyAmount",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "11",
+                "meta": "i64",
+                "name": "completeYmdt",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "12",
+                "meta": "string",
+                "name": "paymentProcessCorp",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "13",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.zc.class {\n    ALL = 7,\n    READY = 1,\n    COMPLETE = 2,\n    WAIT = 3,\n    CANCEL = 4,\n    FAIL = 5,\n    EXPIRE = 6,\n}"
+            }
+        ],
+        "tstruct": "PaymentTradeInfo",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.z.class {\n    SUCCESS = 1,\n    FAILURE = 2,\n    IN_PROGRESS = 3,\n}"
+            }
+        ],
+        "tstruct": "PayStatusInfo",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentAuthenticationInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "authenticateUsingReferenceNoEx_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "UnregisterAvailabilityInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "checkCanUnregisterEx_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "createTransferRequestAsync_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPaymentUrlByKey_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "string",
+                "name": "success",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "issueTTSPinCodeV2_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "PaymentTradeInfo",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "requestTradeNumber_result",
+        "timport": [
+            "g.a.b.e0.a.d",
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "PaymentException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "updateUserGeneralSettings_result",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "errorCode",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.y0.class {\n    SUCCESS = 0,\n    GENERAL_USER_ERROR = 1000,\n    ACCOUNT_NOT_EXISTS = 1101,\n    ACCOUNT_INVALID_STATUS = 1102,\n    ACCOUNT_ALREADY_EXISTS = 1103,\n    MERCHANT_NOT_EXISTS = 1104,\n    MERCHANT_INVALID_STATUS = 1105,\n    AGREEMENT_REQUIRED = 1107,\n    BLACKLISTED = 1108,\n    WRONG_PASSWORD = 1109,\n    INVALID_CREDIT_CARD = 1110,\n    LIMIT_EXCEEDED = 1111,\n    CANNOT_PROCEED = 1115,\n    TOO_WEAK_PASSWORD = 1120,\n    CANNOT_CREATE_ACCOUNT = 1125,\n    TEMPORARY_PASSWORD_ERROR = 1130,\n    MISSING_PARAMETERS = 1140,\n    NO_VALID_MYCODE_ACCOUNT = 1141,\n    INSUFFICIENT_BALANCE = 1142,\n    TRANSACTION_NOT_FOUND = 1150,\n    TRANSACTION_FINISHED = 1152,\n    PAYMENT_AMOUNT_WRONG = 1153,\n    BALANCE_ACCOUNT_NOT_EXISTS = 1157,\n    DUPLICATED_CITIZEN_ID = 1158,\n    PAYMENT_REQUEST_NOT_FOUND = 1159,\n    AUTH_FAILED = 1169,\n    PASSWORD_SETTING_REQUIRED = 1171,\n    TRANSACTION_ALREADY_PROCESSED = 1172,\n    CURRENCY_NOT_SUPPORTED = 1178,\n    PAYMENT_NOT_AVAILABLE = 1180,\n    TRANSFER_REQUEST_NOT_FOUND = 1181,\n    INVALID_PAYMENT_AMOUNT = 1183,\n    INSUFFICIENT_PAYMENT_AMOUNT = 1184,\n    EXTERNAL_SYSTEM_MAINTENANCE = 1185,\n    EXTERNAL_SYSTEM_INOPERATIONAL = 1186,\n    SESSION_EXPIRED = 1192,\n    UPGRADE_REQUIRED = 1195,\n    REQUEST_TOKEN_EXPIRED = 1196,\n    OPERATION_FINISHED = 1198,\n    EXTERNAL_SYSTEM_ERROR = 1199,\n    PARTIAL_AMOUNT_APPROVED = 1299,\n    PINCODE_AUTH_REQUIRED = 1600,\n    ADDITIONAL_AUTH_REQUIRED = 1601,\n    NOT_BOUND = 1603,\n    OTP_USER_REGISTRATION_ERROR = 1610,\n    OTP_CARD_REGISTRATION_ERROR = 1611,\n    NO_AUTH_METHOD = 1612,\n    GENERAL_USER_ERROR_RESTART = 1696,\n    GENERAL_USER_ERROR_REFRESH = 1697,\n    GENERAL_USER_ERROR_CLOSE = 1698,\n    INTERNAL_SERVER_ERROR = 9000,\n    INTERNAL_SYSTEM_MAINTENANCE = 9999,\n    UNKNOWN_ERROR = 10000,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "debugReason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "serverDefinedMessage",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "map\u003cstring,string\u003e",
+                "name": "errorDetailMap",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "PaymentException",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "requestToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "RSAEncryptedPassword",
+                "name": "password",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "authRequestId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "sessionToken",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "authPasswordAsync_args",
+        "timport": [
+            "g.a.b.e0.a.d"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "processor",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "manufacturer",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "model",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "getCountrySettingV4_args",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "getPoint_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "type",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.yc.class {\n    NULL = 0,\n    ATM = 1,\n    CONVENIENCE_STORE = 2,\n    ALL = 3,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "i64",
+                "name": "startDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "endDate",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "startNum",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i32",
+                "name": "count",
+                "requirement": "3",
+                "type": "8",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "status",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.e0.a.d.zc.class {\n    ALL = 7,\n    READY = 1,\n    COMPLETE = 2,\n    WAIT = 3,\n    CANCEL = 4,\n    FAIL = 5,\n    EXPIRE = 6,\n}"
+            }
+        ],
+        "tstruct": "listTradeNumbers_args",
+        "timport": null
+    }
+]

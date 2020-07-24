@@ -1,0 +1,983 @@
+[
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "bytes",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "BinaryScenarioActionResult",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "deviceId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "actionUri",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "botMid",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i32",
+                "name": "productType",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.i0.a.a.q.class {\n    CLOUD = 1,\n    BLE = 2,\n    BEACON = 3,\n}"
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "providerName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "string",
+                "name": "profileImageLocation",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "7",
+                "meta": "list\u003cstring\u003e",
+                "name": "channelIdList",
+                "requirement": "2",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "i16",
+                "name": "targetABCEngineVersion",
+                "requirement": "3",
+                "type": "6",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "string",
+                "name": "serviceUuid",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "bool",
+                "name": "bondingRequired",
+                "requirement": "2",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "ThingsDevice",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "DeviceUnlinkResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ThingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "unlinkDevice_result",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "serviceUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "characteristicUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "BleNotificationReceivedTrigger",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ThingsDevice",
+                "name": "device",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "deviceDisplayName",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "UserDevice",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "serviceUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "psdiServiceUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "psdiCharacteristicUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "string",
+                "name": "name",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "string",
+                "name": "profileImageLocation",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "bool",
+                "name": "bondingRequired",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            }
+        ],
+        "tstruct": "BleProduct",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.i0.a.a.b0.class {\n    INTERNAL_SERVER_ERROR = 0,\n    UNAUTHORIZED = 1,\n    INVALID_REQUEST = 2,\n    INVALID_STATE = 3,\n    DEVICE_LIMIT_EXCEEDED = 4096,\n    UNSUPPORTED_REGION = 4097,\n}"
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "reason",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ThingsException",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "VoidScenarioActionResult",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "deviceId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "DeviceLinkRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "latestOffset",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "DeviceLinkResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "deviceId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "DeviceUnlinkRequest",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "DeviceUnlinkResponse",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "DisconnectAction",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetBleDeviceRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBleDevice_args",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "serviceUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "characteristicUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GattReadAction",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "ThingsDevice",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ThingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBleDevice_result",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "serviceUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "characteristicUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "string",
+                "name": "data",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GattWriteAction",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "getBleProducts_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "serviceUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "psdi",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetBleDeviceRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cBleProduct\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ThingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getBleProducts_result",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cstring\u003e",
+                "name": "deviceIds",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetPredefinedScenarioSetsRequest",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "map\u003cstring,ScenarioSet\u003e",
+                "name": "scenarioSets",
+                "requirement": "3",
+                "type": "13",
+                "note": ""
+            }
+        ],
+        "tstruct": "GetPredefinedScenarioSetsResponse",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "ImmediateTrigger",
+        "timport": null
+    },
+    {
+        "tfields": [],
+        "tstruct": "getLinkedDevices_args",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "2",
+                "meta": "list\u003cScenarioResult\u003e",
+                "name": "scenarioResults",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "NotifyScenarioExecutedRequest",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "list\u003cUserDevice\u003e",
+                "name": "success",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ThingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getLinkedDevices_result",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [],
+        "tstruct": "NotifyScenarioExecutedResponse",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GetPredefinedScenarioSetsRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPredefinedScenarioSets_args",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "GetPredefinedScenarioSetsResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ThingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "getPredefinedScenarioSets_result",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "id",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "ScenarioTrigger",
+                "name": "trigger",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "list\u003cScenarioAction\u003e",
+                "name": "actions",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            }
+        ],
+        "tstruct": "Scenario",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "DeviceLinkRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "linkDevice_args",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "GattReadAction",
+                "name": "gattRead",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "GattWriteAction",
+                "name": "gattWrite",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "SleepAction",
+                "name": "sleep",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "DisconnectAction",
+                "name": "disconnect",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "StopNotificationAction",
+                "name": "stopNotification",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ScenarioAction",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "DeviceLinkResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ThingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "linkDevice_result",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "VoidScenarioActionResult",
+                "name": "voidResult",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "BinaryScenarioActionResult",
+                "name": "binaryResult",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ScenarioActionResult",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "scenarioId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "deviceId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "startTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i64",
+                "name": "endTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "6",
+                "meta": "i32",
+                "name": "code",
+                "requirement": "3",
+                "type": "8",
+                "note": "enum g.a.b.i0.a.a.v.class {\n    SUCCESS = 0,\n    UNKNOWN_ERROR = 1,\n    GATT_ERROR = 2,\n    GATT_OPERATION_NOT_SUPPORTED = 3,\n    GATT_SERVICE_NOT_FOUND = 4,\n    GATT_CHARACTERISTIC_NOT_FOUND = 5,\n    GATT_CONNECTION_CLOSED = 6,\n    CONNECTION_INVALID = 7,\n}"
+            },
+            {
+                "index": "7",
+                "meta": "string",
+                "name": "errorReason",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "8",
+                "meta": "string",
+                "name": "bleNotificationPayload",
+                "requirement": "2",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "9",
+                "meta": "list\u003cScenarioActionResult\u003e",
+                "name": "actionResults",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "10",
+                "meta": "string",
+                "name": "connectionId",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "ScenarioResult",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "list\u003cScenario\u003e",
+                "name": "scenarios",
+                "requirement": "3",
+                "type": "15",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "bool",
+                "name": "autoClose",
+                "requirement": "3",
+                "type": "2",
+                "note": ""
+            },
+            {
+                "index": "3",
+                "meta": "i64",
+                "name": "suppressionInterval",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "4",
+                "meta": "i64",
+                "name": "revision",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            },
+            {
+                "index": "5",
+                "meta": "i64",
+                "name": "modifiedTime",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "ScenarioSet",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "ImmediateTrigger",
+                "name": "immediate",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "BleNotificationReceivedTrigger",
+                "name": "bleNotificationReceived",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "ScenarioTrigger",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "NotifyScenarioExecutedRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyScenarioExecuted_args",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "i64",
+                "name": "sleepMillis",
+                "requirement": "3",
+                "type": "10",
+                "note": ""
+            }
+        ],
+        "tstruct": "SleepAction",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "0",
+                "meta": "NotifyScenarioExecutedResponse",
+                "name": "success",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            },
+            {
+                "index": "1",
+                "meta": "ThingsException",
+                "name": "e",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "notifyScenarioExecuted_result",
+        "timport": [
+            "g.a.b.i0.a.a",
+            "g.a.b.i0.a.a"
+        ]
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "string",
+                "name": "serviceUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            },
+            {
+                "index": "2",
+                "meta": "string",
+                "name": "characteristicUuid",
+                "requirement": "3",
+                "type": "11",
+                "note": ""
+            }
+        ],
+        "tstruct": "StopNotificationAction",
+        "timport": null
+    },
+    {
+        "tfields": [
+            {
+                "index": "1",
+                "meta": "DeviceUnlinkRequest",
+                "name": "request",
+                "requirement": "3",
+                "type": "12",
+                "note": ""
+            }
+        ],
+        "tstruct": "unlinkDevice_args",
+        "timport": [
+            "g.a.b.i0.a.a"
+        ]
+    }
+]
