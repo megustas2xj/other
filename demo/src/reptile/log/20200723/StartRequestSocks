@@ -1,0 +1,12 @@
+[2020-07-23 20:11:30.939]: Get "http://www.zuanke8.com/forum-19-2.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:11:50.268]: Get "http://www.zuanke8.com/forum-19-1.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:11:50.269]: Get "http://www.zuanke8.com/forum-19-2.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:12:17.743]: Get "http://www.zuanke8.com/forum-19-1.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:12:17.744]: Get "http://www.zuanke8.com/forum-19-2.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:12:17.746]: Get "http://www.zuanke8.com/forum-19-3.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:13:12.111]: Get "http://www.zuanke8.com/forum-19-1.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:13:12.113]: Get "http://www.zuanke8.com/forum-19-2.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:13:12.113]: Get "http://www.zuanke8.com/forum-19-3.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:13:21.655]: Get "http://www.zuanke8.com/forum-19-1.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:13:21.656]: Get "http://www.zuanke8.com/forum-19-2.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.
+[2020-07-23 20:13:21.657]: Get "http://www.zuanke8.com/forum-19-3.html": socks connect tcp: dial tcp :0: connectex: The requested address is not valid in its context.

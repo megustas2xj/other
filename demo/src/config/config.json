@@ -1,0 +1,39 @@
+{
+	"database": {
+		"default": {
+			"driver": "sqlite",
+			"file": "./admin.db"
+		},
+		"mysql": {
+			"host":       "127.0.0.1",
+			"port":       "3306",
+			"user":       "root",
+			"pwd":        "zzw198419",
+			"name":       "reptile",
+			"driver":     "mysql"
+		}
+	},
+	"language": "zh",
+	"prefix": "admin",
+	"theme": "sword",
+	"store": {
+		"path": "./uploads",
+		"prefix": "uploads"
+	},
+	"title": "GoAdmin",
+	"logo": "\u003cb\u003eGo\u003c/b\u003eAdmin",
+	"mini_logo": "\u003cb\u003eG\u003c/b\u003eA",
+	"index": "/",
+	"login_url": "/login",
+	"debug": true,
+	"env": "local",
+	"info_log": "./logs/info.log",
+	"error_log": "./logs/error.log",
+	"access_log": "./logs/access.log",
+	"session_life_time": 7200,
+	"file_upload_engine": {
+		"name": "local"
+	},
+	"login_title": "GoAdmin",
+	"auth_user_table": "goadmin_users"
+}
